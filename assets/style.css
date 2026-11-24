@@ -170,6 +170,7 @@ a { color: var(--cyan); }
 .side { padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--panel-2); }
 .side h2 { margin: 2px 0; font-size: 21px; line-height: 1.2; overflow-wrap: anywhere; }
 .side p { margin: 0; font-size: 13px; color: var(--muted); }
+.side h2.unnamed { font-size: 17px; font-style: italic; color: var(--muted); }
 .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
 .side-game { border-color: rgba(255, 79, 163, .5); }
 .side-game .eyebrow { color: var(--pink); }

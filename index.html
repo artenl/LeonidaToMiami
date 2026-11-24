@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Leonida → Miami</title>
-  <meta name="description" content="Every named GTA VI place in Vice City, pinned on the real map of Miami.">
+  <meta name="description" content="Every matched GTA VI place in Vice City, pinned on the real map of Miami.">
   <meta name="theme-color" content="#140a2e">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23140a2e'/%3E%3Ccircle cx='16' cy='14' r='7' fill='none' stroke='%23ff4fa3' stroke-width='3'/%3E%3Cpath d='M16 21v7' stroke='%2336e0e6' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
@@ -43,6 +43,9 @@
           <div class="chips" id="chips"></div>
           <div class="filters-row">
             <select id="district" aria-label="District"></select>
+          </div>
+          <div class="filters-row">
+            <label class="toggle"><input type="checkbox" id="only-named"><span data-i18n="filter.named"></span></label>
             <label class="toggle"><input type="checkbox" id="only-new"><span data-i18n="filter.new"></span></label>
           </div>
           <p class="count" id="count"></p>

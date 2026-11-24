@@ -27,7 +27,7 @@
   const state = {
     lang: "en",
     places: [], byId: new Map(), tours: [],
-    q: "", cat: "all", district: "", onlyNew: false,
+    q: "", cat: "all", district: "", onlyNew: false, onlyNamed: false,
     seen: new Set(store.get("ltm.seen", [])),
     selected: null, tour: null, tourIndex: 0,
     tab: "places", mapReady: false,
@@ -61,12 +61,16 @@
 
   /* ---------- filtering ---------- */
 
+  const realLabel = (p) => p.real.name || p.real.address.split(",")[0];
+  const gameLabel = (p) => p.name || t("place.unnamed");
+
   function visiblePlaces() {
     const q = fold(state.q.trim());
     return state.places.filter((p) =>
       (state.cat === "all" || p.category === state.cat) &&
       (!state.district || p.district === state.district) &&
       (!state.onlyNew || !state.seen.has(p.id)) &&
+      (!state.onlyNamed || p.named) &&
       (!q || p.search.includes(q)));
   }
 
@@ -99,8 +103,8 @@
       <li><button type="button" class="row${state.seen.has(p.id) ? " seen" : ""}" data-id="${p.id}">
         <i style="--c:${COLORS[p.category]}" aria-hidden="true"></i>
         <span class="row-text">
-          <strong>${esc(p.name)}</strong>
-          <small>${esc(p.real.name || p.real.address.split(",")[0])}</small>
+          <strong>${esc(p.named ? p.name : realLabel(p))}</strong>
+          <small>${esc(p.named ? realLabel(p) : t("place.unnamedRow"))}</small>
         </span>
         <span class="row-district">${esc(p.district)}</span>
       </button></li>`).join("");
@@ -153,13 +157,13 @@
       <div class="pair">
         <div class="side side-game">
           <span class="eyebrow">${esc(t("card.inGame"))}</span>
-          <h2>${esc(p.name)}</h2>
+          <h2${p.named ? "" : ' class="unnamed"'}>${esc(gameLabel(p))}</h2>
           <p>${esc([p.district, p.city].filter(Boolean).join(" · "))}</p>
         </div>
         <div class="pair-arrow" aria-hidden="true">↓</div>
         <div class="side side-real">
           <span class="eyebrow">${esc(t("card.inReal"))}</span>
-          <h2>${esc(p.real.name || p.real.address.split(",")[0])}</h2>
+          <h2>${esc(realLabel(p))}</h2>
           <p>${esc(p.real.name ? p.real.address : t("card.noRealName"))}</p>
         </div>
       </div>
@@ -188,7 +192,7 @@
     const url = `${location.origin}${location.pathname}#/place/${p.id}`;
     try {
       if (navigator.share && matchMedia("(pointer: coarse)").matches) {
-        await navigator.share({ title: `${p.name} → ${p.real.name || p.real.address}`, url });
+        await navigator.share({ title: `${gameLabel(p)} → ${realLabel(p)}`, url });
         return;
       }
       await navigator.clipboard.writeText(url);
@@ -318,7 +322,8 @@
         id: Number(p.id.slice(1)),
         geometry: { type: "Point", coordinates: [p.real.lng, p.real.lat] },
         properties: {
-          id: p.id, name: p.name, color: COLORS[p.category],
+          id: p.id, name: p.name, tip: p.name || realLabel(p), size: p.named ? 1 : 0.62,
+          color: COLORS[p.category],
           seen: state.seen.has(p.id), selected: state.selected === p,
         },
       })),
@@ -363,21 +368,23 @@
       layout: { "line-cap": "round", "line-join": "round" },
       paint: { "line-color": "#ff4fa3", "line-width": 3, "line-opacity": 0.75, "line-dasharray": [0.2, 2] },
     });
-    const radius = ["interpolate", ["linear"], ["zoom"], 10, 4, 14, 7, 17, 11];
+    const size = ["get", "size"];
+    const radius = ["interpolate", ["linear"], ["zoom"], 10, ["*", 4, size], 14, ["*", 7, size], 17, ["*", 11, size]];
     map.addLayer({
       id: "pins-glow", type: "circle", source: "places",
       paint: {
         "circle-color": ["get", "color"], "circle-blur": 1, "circle-opacity": 0.45,
-        "circle-radius": ["interpolate", ["linear"], ["zoom"], 10, 9, 14, 16, 17, 24],
+        "circle-radius": ["interpolate", ["linear"], ["zoom"], 10, ["*", 9, size], 14, ["*", 16, size], 17, ["*", 24, size]],
       },
     });
     map.addLayer({
       id: "pins", type: "circle", source: "places",
+      layout: { "circle-sort-key": size },
       paint: {
         "circle-radius": radius,
         "circle-color": ["case", ["get", "seen"], ["get", "color"], "#140a2e"],
         "circle-stroke-color": ["get", "color"],
-        "circle-stroke-width": 2,
+        "circle-stroke-width": ["case", ["==", size, 1], 2, 1.4],
       },
     });
     map.addLayer({
@@ -403,7 +410,7 @@
     const tip = new maplibregl.Popup({ closeButton: false, closeOnClick: false, offset: 12, className: "tip" });
     map.on("mousemove", "pins", (e) => {
       const f = e.features[0];
-      tip.setLngLat(f.geometry.coordinates).setText(f.properties.name).addTo(map);
+      tip.setLngLat(f.geometry.coordinates).setText(f.properties.tip).addTo(map);
     });
     map.on("mouseleave", "pins", () => tip.remove());
 
@@ -447,7 +454,7 @@
     renderProgress();
     updateMapData();
     focusMap();
-    document.title = `${p.name} → ${p.real.name || p.real.address.split(",")[0]} · Leonida → Miami`;
+    document.title = `${gameLabel(p)} → ${realLabel(p)} · Leonida → Miami`;
   }
 
   function showBrowse() {
@@ -514,6 +521,7 @@
       renderList();
       fitTo(visiblePlaces());
     });
+    $("only-named").addEventListener("change", (e) => { state.onlyNamed = e.target.checked; renderList(); });
     $("only-new").addEventListener("change", (e) => { state.onlyNew = e.target.checked; renderList(); });
     $("list").addEventListener("click", (e) => {
       const b = e.target.closest("[data-id]");
@@ -561,7 +569,9 @@
     applyLang();
     try {
       const data = await (await fetch("data/places.json")).json();
-      state.places = data.places.sort((a, b) => a.name.localeCompare(b.name));
+      const rank = (p) => (p.named ? (p.generic ? 1 : 0) : 2);
+      const label = (p) => p.name || p.real.name || p.real.address;
+      state.places = data.places.sort((a, b) => rank(a) - rank(b) || label(a).localeCompare(label(b)));
       state.places.forEach((p) => {
         p.search = fold(`${p.name} ${p.real.name} ${p.real.address} ${p.district} ${p.city}`);
         state.byId.set(p.id, p);

@@ -7,7 +7,9 @@ all contributors). Run from the repository root:
     python3 scripts/build_data.py            # download fresh data, then build
     python3 scripts/build_data.py --offline  # rebuild from data/source/
 
-Only named places in Greater Miami are kept; see GENERIC and BBOX below.
+Every matched place in Greater Miami is kept (see BBOX), except homes known
+only by a street address, which may be private residences. Places without an
+in-game name get "named": false; tours only use properly named places.
 """
 import json
 import math
@@ -164,23 +166,28 @@ def build(landmarks):
         if not (BBOX[0] < lat < BBOX[1] and BBOX[2] < lng < BBOX[3]):
             continue
         parts = [p.strip() for p in ig_address.split(",")]
-        name = parts[0].strip('"')
-        if not name or "?" in name or name.lower() in GENERIC:
-            continue
+        name = parts[0].strip('"').strip()
+        named = not re.fullmatch(r"\??\s*(\(.*\))?", name)
+        if not named:
+            name = ""
         types = set(types)
         if types & {"//doesnt_exist", "//doesnt-exist?", "fictional"}:
             continue
         area = [p for p in parts[1:] if not STREET.search(p)]
         real_name, real_address = split_real(rl_address)
+        if not real_name and types & {"residential", "#safehouse"}:
+            continue  # address-only home: may be a private residence
         flags = sorted(
             f for f in ("unconfirmed", "demolished", "closed", "enterable")
             if f in types
         )
-        if rl_address.rstrip().endswith("?") or parts[0].startswith('"'):
+        if rl_address.rstrip().endswith("?") or parts[0].startswith('"') or "?" in name:
             flags = sorted(set(flags) | {"unconfirmed"})
         places.append({
             "id": lid,
             "name": name,
+            "named": named,
+            "generic": name.lower() in GENERIC,
             "district": area[0] if area else "",
             "city": area[-1] if len(area) > 1 else "",
             "category": category(types, f"{name} {real_name}"),
@@ -197,6 +204,9 @@ def build(landmarks):
     places.sort(key=lambda p: (p["name"], int(p["id"][1:])))
     kept = []
     for p in places:
+        if not p["named"] or p["generic"]:
+            kept.append(p)
+            continue
         dup = next(
             (k for k in kept if k["name"] == p["name"] and distance(
                 (k["real"]["lat"], k["real"]["lng"]),
@@ -226,7 +236,8 @@ def order(stops, how):
 def build_tours(places):
     tours = []
     for tour in TOURS:
-        stops = [p for p in places if tour["match"](p)]
+        stops = [p for p in places
+                 if p["named"] and not p["generic"] and tour["match"](p)]
         stops = order(stops, tour["sort"])[:14]
         if len(stops) >= 3:
             tours.append({
@@ -249,6 +260,7 @@ def main():
     }
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n")
     print(f"{len(places)} places, {len(out['tours'])} tours -> {OUT.relative_to(ROOT)}")
+    print("named:", sum(p["named"] for p in places))
     print("categories:", dict(Counter(p["category"] for p in places).most_common()))
     print("tours:", {t["id"]: len(t["stops"]) for t in out["tours"]})
 

@@ -1,8 +1,8 @@
 # Leonida → Miami
 
-An interactive map that pins the named places of GTA VI's Vice City onto the real map of Greater Miami. Click a pin to see the in-game name next to the real building, with a photo, a Street View link and the in-game view on GTADB.
+An interactive map that pins the places of GTA VI's Vice City onto the real map of Greater Miami. Click a pin to see the in-game name next to the real building, with a photo, a Street View link and the in-game view on GTADB.
 
-- 236 named places, filterable by category and Vice City district
+- About 1,270 matched places, 330 of them with an in-game name, filterable by category and Vice City district
 - Six themed tours (Ocean Drive, Downtown bayfront, Tequesta, Little Cuba, Stockyard, nightlife)
 - Discovery counter saved in the browser
 - A shareable link per place (`#/place/L187`) and per tour stop (`#/tour/ocean-drive/3`)
@@ -26,7 +26,7 @@ Then open <http://localhost:8000>. To publish, enable GitHub Pages on the reposi
 python3 scripts/build_data.py
 ```
 
-Add `--offline` to rebuild from the saved copy in `data/source/` instead of downloading. The script keeps places inside Greater Miami that have a proper in-game name, drops generic labels such as "Bridge" or "Parking Lot", and builds the tours. Tour definitions and the filtering rules are at the top of the script.
+Add `--offline` to rebuild from the saved copy in `data/source/` instead of downloading. The script keeps every matched place inside Greater Miami, except homes known only by a street address (they may be private residences), and builds the tours from the properly named places. Tour definitions and the filtering rules are at the top of the script.
 
 ## Where things come from
 
