@@ -3,6 +3,7 @@
 An interactive map that pins the places of GTA VI's Vice City onto the real map of Greater Miami. Click a pin to see the in-game name next to the real building, with a photo, a Street View link and the in-game view on GTADB.
 
 - About 1,270 matched places, 330 of them with an in-game name, filterable by category and Vice City district
+- A switch between the real Miami map and the community-made GTA VI map, with the same pins on both
 - Six themed tours (Ocean Drive, Downtown bayfront, Tequesta, Little Cuba, Stockyard, nightlife)
 - Discovery counter saved in the browser
 - A shareable link per place (`#/place/L187`) and per tour stop (`#/tour/ocean-drive/3`)
@@ -34,6 +35,7 @@ Add `--offline` to rebuild from the saved copy in `data/source/` instead of down
 |---|---|---|
 | Game ↔ real-life matches | [GTA VI Landmarks Data](https://map.gtadb.org/#VI), gtadb.org and all contributors | CC BY 4.0 |
 | Base map | [OpenFreeMap](https://openfreemap.org) tiles, © OpenStreetMap contributors | ODbL |
+| GTA VI map tiles | [gtadb.org](https://map.gtadb.org/#VI) "day" tile set, loaded from jsDelivr at a pinned commit | CC BY 4.0 |
 | Map renderer | [MapLibre GL JS](https://maplibre.org) | BSD-3-Clause |
 | Place photos | Wikimedia Commons, looked up in the visitor's browser and credited on each card | per image |
 

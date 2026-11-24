@@ -159,7 +159,7 @@ def distance(a, b):
 def build(landmarks):
     places = []
     for lid, row in landmarks.items():
-        ig_address, _, _, rl_address, rl_coords, _, types = row[:7]
+        ig_address, ig_coords, _, rl_address, rl_coords, _, types = row[:7]
         if not rl_address or not rl_coords:
             continue
         lat, lng = rl_coords
@@ -192,6 +192,7 @@ def build(landmarks):
             "city": area[-1] if len(area) > 1 else "",
             "category": category(types, f"{name} {real_name}"),
             "flags": flags,
+            "game": [round(c, 1) for c in ig_coords] if len(ig_coords) == 2 else None,
             "real": {
                 "name": real_name,
                 "address": real_address,

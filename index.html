@@ -59,6 +59,7 @@
         <footer class="credits">
           <p data-i18n-html="credits.data"></p>
           <p data-i18n-html="credits.map"></p>
+          <p data-i18n-html="credits.tiles"></p>
           <p data-i18n="credits.disclaimer"></p>
           <button type="button" class="link" id="reset" data-i18n="progress.reset"></button>
         </footer>
@@ -79,6 +80,10 @@
 
     <div class="map-wrap">
       <div id="map"></div>
+      <div class="view-switch" role="group" aria-label="Map">
+        <button type="button" data-view="real" data-i18n="view.real"></button>
+        <button type="button" data-view="game" data-i18n="view.game"></button>
+      </div>
       <div class="toast" id="toast" role="status" hidden></div>
     </div>
   </main>

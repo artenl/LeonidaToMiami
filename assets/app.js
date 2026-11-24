@@ -3,6 +3,18 @@
 
   const STYLE_URL = "https://tiles.openfreemap.org/styles/dark";
   const HOME = { center: [-80.19, 25.775], zoom: 11.2 };
+  const REAL_BOUNDS = [[-81.6, 24.9], [-79.2, 26.6]];
+
+  /* The GTA VI map: community tiles from gtadb.org (CC BY 4.0), served by jsDelivr
+     from a pinned commit. The game world is a 32768 m square; tile level z covers it
+     with 4 * 2^z tiles, so it lines up with web-mercator tiles two zoom levels up. */
+  const GTA_TILES = "https://cdn.jsdelivr.net/gh/rolux/gtadb.org@d406fea099e1df2bce42fd6b87eed04bce646629/maps/tiles/6/day";
+  const GTA_WORLD = 32768;
+  const GTA_RANGE = { x0: 34, y0: 34, x1: 168, y1: 207, n: 256 }; // tiles present at level 6
+  const GTA_ZOOM_SHIFT = -10; // same metres per pixel as the real map at this many zoom levels lower
+  const GTA_SEA = "#57b3c9";
+  const gtaLngLat = (u, v) => new maplibregl.MercatorCoordinate(u, v, 0).toLngLat();
+  const gameLngLat = ([x, y]) => gtaLngLat((x + GTA_WORLD / 2) / GTA_WORLD, (GTA_WORLD / 2 - y) / GTA_WORLD).toArray();
   const COLORS = {
     hotel: "#ff4fa3", nightlife: "#c77dff", food: "#ffb347", shop: "#ffe66d",
     leisure: "#36e0e6", transport: "#6ea8ff", civic: "#9be564", work: "#ff7a59",
@@ -30,7 +42,7 @@
     q: "", cat: "all", district: "", onlyNew: false, onlyNamed: false,
     seen: new Set(store.get("ltm.seen", [])),
     selected: null, tour: null, tourIndex: 0,
-    tab: "places", mapReady: false,
+    tab: "places", mapReady: false, view: "real",
   };
   let map;
 
@@ -55,6 +67,7 @@
     document.querySelectorAll("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });
     document.querySelectorAll("[data-i18n-html]").forEach((el) => { el.innerHTML = t(el.dataset.i18nHtml); });
     document.querySelectorAll("[data-lang]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.lang === state.lang));
+    document.querySelectorAll("[data-view]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.view === state.view));
     $("search").placeholder = t("search.placeholder");
     renderAll();
   }
@@ -175,8 +188,10 @@
         <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${query}">${esc(t("card.directions"))}</a>
         <button type="button" class="btn" id="share">${esc(t("card.share"))}</button>
       </div>
+      <button type="button" class="btn btn-wide" id="flip">${esc(t(state.view === "real" ? "card.showGame" : "card.showReal"))}</button>
       <a class="gtadb" target="_blank" rel="noopener" href="https://map.gtadb.org/#VI,${p.id}">${esc(t("card.gtadb"))} ↗</a>`;
     $("share").addEventListener("click", () => share(p));
+    $("flip").addEventListener("click", () => setView(state.view === "real" ? "game" : "real"));
     loadPhoto(p);
 
     const tour = state.tour;
@@ -314,13 +329,19 @@
     return style;
   }
 
+  /* Where a place sits on the map currently shown; null if GTADB has not placed it in-game. */
+  function position(p) {
+    if (state.view === "real") return [p.real.lng, p.real.lat];
+    return p.game ? gameLngLat(p.game) : null;
+  }
+
   function featureCollection(items) {
     return {
       type: "FeatureCollection",
-      features: items.map((p) => ({
+      features: items.filter(position).map((p) => ({
         type: "Feature",
         id: Number(p.id.slice(1)),
-        geometry: { type: "Point", coordinates: [p.real.lng, p.real.lat] },
+        geometry: { type: "Point", coordinates: position(p) },
         properties: {
           id: p.id, name: p.name, tip: p.name || realLabel(p), size: p.named ? 1 : 0.62,
           color: COLORS[p.category],
@@ -338,7 +359,7 @@
       type: "FeatureCollection",
       features: tour ? [{
         type: "Feature", properties: {},
-        geometry: { type: "LineString", coordinates: tour.stops.map((id) => state.byId.get(id)).map((p) => [p.real.lng, p.real.lat]) },
+        geometry: { type: "LineString", coordinates: tour.stops.map((id) => position(state.byId.get(id))).filter(Boolean) },
       }] : [],
     });
   }
@@ -353,14 +374,32 @@
   async function initMap() {
     const style = neon(await (await fetch(STYLE_URL)).json());
     const font = (style.layers.find((l) => l.id === "place_suburb")?.layout || {})["text-font"] || ["Noto Sans Regular"];
+    const baseLayers = style.layers.map((l) => l.id).filter((id) => id !== "background");
+    maplibregl.addProtocol("gta", async (params, abort) => {
+      const [z, x, y] = params.url.slice(6).split("/").map(Number);
+      const res = await fetch(`${GTA_TILES}/${z - 2}/${z - 2},${y},${x}.jpg`, { signal: abort.signal });
+      if (!res.ok) throw new Error(`GTA tile ${res.status}`);
+      return { data: await res.arrayBuffer() };
+    });
     map = new maplibregl.Map({
       container: "map", style, center: HOME.center, zoom: HOME.zoom,
-      maxBounds: [[-81.6, 24.9], [-79.2, 26.6]], attributionControl: { compact: true },
+      maxBounds: REAL_BOUNDS, attributionControl: { compact: true },
     });
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "bottom-right");
     map.addControl(new maplibregl.GeolocateControl({ trackUserLocation: false }), "bottom-right");
     await new Promise((resolve) => map.on("load", resolve));
 
+    const r = GTA_RANGE;
+    const nw = gtaLngLat(r.x0 / r.n, r.y0 / r.n);
+    const se = gtaLngLat(r.x1 / r.n, r.y1 / r.n);
+    state.gameBounds = [[nw.lng, se.lat], [se.lng, nw.lat]];
+    map.addSource("gta", {
+      type: "raster", tiles: ["gta://{z}/{x}/{y}"], tileSize: 256, minzoom: 2, maxzoom: 8,
+      bounds: [nw.lng, se.lat, se.lng, nw.lat],
+      attribution: 'GTA VI map tiles: <a href="https://map.gtadb.org/#VI" target="_blank" rel="noopener">gtadb.org</a> and contributors, CC BY 4.0',
+    });
+    map.addLayer({ id: "gta", type: "raster", source: "gta", layout: { visibility: "none" } });
+    state.baseLayers = baseLayers;
     map.addSource("places", { type: "geojson", data: featureCollection([]) });
     map.addSource("tour", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
     map.addLayer({
@@ -369,19 +408,16 @@
       paint: { "line-color": "#ff4fa3", "line-width": 3, "line-opacity": 0.75, "line-dasharray": [0.2, 2] },
     });
     const size = ["get", "size"];
-    const radius = ["interpolate", ["linear"], ["zoom"], 10, ["*", 4, size], 14, ["*", 7, size], 17, ["*", 11, size]];
     map.addLayer({
       id: "pins-glow", type: "circle", source: "places",
       paint: {
         "circle-color": ["get", "color"], "circle-blur": 1, "circle-opacity": 0.45,
-        "circle-radius": ["interpolate", ["linear"], ["zoom"], 10, ["*", 9, size], 14, ["*", 16, size], 17, ["*", 24, size]],
       },
     });
     map.addLayer({
       id: "pins", type: "circle", source: "places",
       layout: { "circle-sort-key": size },
       paint: {
-        "circle-radius": radius,
         "circle-color": ["case", ["get", "seen"], ["get", "color"], "#140a2e"],
         "circle-stroke-color": ["get", "color"],
         "circle-stroke-width": ["case", ["==", size, 1], 2, 1.4],
@@ -390,7 +426,6 @@
     map.addLayer({
       id: "pin-selected", type: "circle", source: "places", filter: ["==", ["get", "selected"], true],
       paint: {
-        "circle-radius": ["interpolate", ["linear"], ["zoom"], 10, 9, 14, 13, 17, 18],
         "circle-color": "rgba(0,0,0,0)", "circle-stroke-color": "#ffffff", "circle-stroke-width": 2.5,
       },
     });
@@ -415,24 +450,75 @@
     map.on("mouseleave", "pins", () => tip.remove());
 
     state.mapReady = true;
+    scalePins();
     updateMapData();
-    focusMap();
+    if (state.view === "game") applyView(); else focusMap();
+  }
+
+  /* Pin sizes follow the zoom level, which is shifted on the much smaller game world. */
+  function scalePins() {
+    const shift = state.view === "game" ? GTA_ZOOM_SHIFT : 0;
+    const size = ["get", "size"];
+    const grow = (a, b, c, scaled) => ["interpolate", ["linear"], ["zoom"],
+      10 + shift, scaled ? ["*", a, size] : a, 14 + shift, scaled ? ["*", b, size] : b, 17 + shift, scaled ? ["*", c, size] : c];
+    map.setPaintProperty("pins-glow", "circle-radius", grow(9, 16, 24, true));
+    map.setPaintProperty("pins", "circle-radius", grow(4, 7, 11, true));
+    map.setPaintProperty("pin-selected", "circle-radius", grow(9, 13, 18, false));
+    map.setLayerZoomRange("pin-labels", 14 + shift, 24);
+  }
+
+  function applyView() {
+    document.body.dataset.view = state.view;
+    document.querySelectorAll("[data-view]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.view === state.view));
+    if (!state.mapReady) return;
+    const game = state.view === "game";
+    state.baseLayers.forEach((id) => map.setLayoutProperty(id, "visibility", game ? "none" : "visible"));
+    map.setLayoutProperty("gta", "visibility", game ? "visible" : "none");
+    map.setPaintProperty("background", "background-color", game ? GTA_SEA : "#1a1038");
+    scalePins();
+    updateMapData();
+    map.setMaxBounds(null);
+    map.setMinZoom(game ? 1.5 : 0);
+    map.setMaxZoom(game ? 9.5 : 22);
+    const at = state.selected && position(state.selected);
+    if (at) {
+      map.jumpTo({ center: at, zoom: 15.5 + (game ? GTA_ZOOM_SHIFT : 0), padding: mapPadding() });
+    } else if (game) {
+      const b = new maplibregl.LngLatBounds();
+      state.places.forEach((p) => { if (p.game) b.extend(gameLngLat(p.game)); });
+      map.fitBounds(b, { padding: mapPadding(), duration: 0 });
+    } else {
+      map.jumpTo({ ...HOME, padding: { top: 0, bottom: 0, left: 0, right: 0 } });
+    }
+    map.setMaxBounds(game ? state.gameBounds : REAL_BOUNDS);
+    if (state.selected && !at) toast(t("view.notPlaced"));
+  }
+
+  function setView(view) {
+    if (view === state.view) return;
+    state.view = view;
+    applyView();
+    if (state.selected) renderCard(state.selected);
   }
 
   function focusMap() {
     if (!state.mapReady) return;
     const padding = mapPadding();
-    if (state.selected) {
-      const { lng, lat } = state.selected.real;
-      map.flyTo({ center: [lng, lat], zoom: Math.max(map.getZoom(), 15.5), padding, speed: 1.4, essential: true });
+    const at = state.selected && position(state.selected);
+    if (at) {
+      const zoom = 15.5 + (state.view === "game" ? GTA_ZOOM_SHIFT : 0);
+      map.flyTo({ center: at, zoom: Math.max(map.getZoom(), zoom), padding, speed: 1.4, essential: true });
+    } else if (state.selected) {
+      toast(t("view.notPlaced"));
     }
   }
 
   function fitTo(items) {
-    if (!state.mapReady || !items.length) return;
+    const points = items.map(position).filter(Boolean);
+    if (!state.mapReady || !points.length) return;
     const b = new maplibregl.LngLatBounds();
-    items.forEach((p) => b.extend([p.real.lng, p.real.lat]));
-    map.fitBounds(b, { padding: mapPadding(), maxZoom: 15.5, duration: 900 });
+    points.forEach((c) => b.extend(c));
+    map.fitBounds(b, { padding: mapPadding(), maxZoom: 15.5 + (state.view === "game" ? GTA_ZOOM_SHIFT : 0), duration: 900 });
   }
 
   /* ---------- navigation ---------- */
@@ -535,6 +621,7 @@
       state.tab = b.dataset.tab;
       renderTabs();
     }));
+    document.querySelectorAll("[data-view]").forEach((b) => b.addEventListener("click", () => setView(b.dataset.view)));
     $("card-back").addEventListener("click", () => { location.hash = "#/"; });
     $("tour-prev").addEventListener("click", () => stepTour(-1));
     $("tour-next").addEventListener("click", () => stepTour(1));
@@ -565,6 +652,8 @@
 
   async function start() {
     state.lang = pickLang();
+    if (new URLSearchParams(location.search).get("map") === "leonida") state.view = "game";
+    document.body.dataset.view = state.view;
     bind();
     applyLang();
     try {

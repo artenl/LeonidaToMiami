@@ -190,9 +190,19 @@ a { color: var(--cyan); }
   color: var(--text); text-decoration: none; font-size: 13px; font-weight: 600;
 }
 .btn:hover { border-color: var(--cyan); }
+.btn-wide { width: 100%; margin-top: 6px; border-color: rgba(255, 79, 163, .5); }
 .gtadb { display: block; margin-top: 12px; font-size: 13px; }
 
 /* ---------- map chrome ---------- */
+
+.view-switch {
+  position: absolute; z-index: 15; top: 12px; right: 12px; display: flex; padding: 3px;
+  background: rgba(20, 10, 46, .92); border: 1px solid var(--line); border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .4);
+}
+.view-switch button { background: none; border: 0; border-radius: 999px; padding: 7px 16px; font-weight: 700; font-size: 13px; color: var(--muted); }
+.view-switch button[aria-pressed="true"] { background: linear-gradient(90deg, var(--pink), var(--sun)); color: #1a0620; }
+body[data-view="game"] .maplibregl-ctrl-geolocate { display: none; }
 
 .toast {
   position: absolute; z-index: 25; left: 50%; bottom: 28px; transform: translateX(-50%);
@@ -234,7 +244,7 @@ a { color: var(--cyan); }
   .panel-handle span { width: 42px; height: 4px; border-radius: 2px; background: var(--line); }
   .tabs { padding-top: 0; }
   .maplibregl-ctrl-bottom-right { display: none; }
-  .toast { bottom: auto; top: 12px; }
+  .toast { bottom: auto; top: 58px; }
   .side h2 { font-size: 19px; }
 }
 
