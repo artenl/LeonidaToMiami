@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Leonida → Miami</title>
+  <meta name="description" content="Every named GTA VI place in Vice City, pinned on the real map of Miami.">
+  <meta name="theme-color" content="#140a2e">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23140a2e'/%3E%3Ccircle cx='16' cy='14' r='7' fill='none' stroke='%23ff4fa3' stroke-width='3'/%3E%3Cpath d='M16 21v7' stroke='%2336e0e6' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/" aria-label="Leonida → Miami">
+      <span class="brand-a">Leonida</span><span class="brand-arrow" aria-hidden="true">→</span><span class="brand-b">Miami</span>
+    </a>
+    <label class="search">
+      <span class="visually-hidden" data-i18n="search.label"></span>
+      <input id="search" type="search" autocomplete="off" spellcheck="false">
+    </label>
+    <div class="progress" id="progress" aria-live="polite">
+      <div class="progress-bar"><span id="progress-fill"></span></div>
+      <span id="progress-text"></span>
+    </div>
+    <div class="lang" role="group" aria-label="Language / Langue">
+      <button type="button" data-lang="fr">FR</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="panel" id="panel">
+      <button class="panel-handle" id="panel-handle" type="button" aria-label="Toggle panel"><span></span></button>
+
+      <section class="view" id="view-browse">
+        <div class="tabs" role="tablist">
+          <button type="button" role="tab" id="tab-places" data-tab="places" data-i18n="tab.places"></button>
+          <button type="button" role="tab" id="tab-tours" data-tab="tours" data-i18n="tab.tours"></button>
+        </div>
+
+        <div class="tab-body" id="body-places">
+          <div class="chips" id="chips"></div>
+          <div class="filters-row">
+            <select id="district" aria-label="District"></select>
+            <label class="toggle"><input type="checkbox" id="only-new"><span data-i18n="filter.new"></span></label>
+          </div>
+          <p class="count" id="count"></p>
+          <ul class="list" id="list"></ul>
+        </div>
+
+        <div class="tab-body" id="body-tours" hidden>
+          <ul class="tours" id="tours"></ul>
+        </div>
+
+        <footer class="credits">
+          <p data-i18n-html="credits.data"></p>
+          <p data-i18n-html="credits.map"></p>
+          <p data-i18n="credits.disclaimer"></p>
+          <button type="button" class="link" id="reset" data-i18n="progress.reset"></button>
+        </footer>
+      </section>
+
+      <section class="view" id="view-card" hidden>
+        <div class="card-nav">
+          <button type="button" class="ghost" id="card-back"><span aria-hidden="true">←</span> <span data-i18n="card.back"></span></button>
+          <div class="tour-nav" id="tour-nav" hidden>
+            <button type="button" class="ghost" id="tour-prev" aria-label="Previous">‹</button>
+            <span id="tour-pos"></span>
+            <button type="button" class="ghost" id="tour-next" aria-label="Next">›</button>
+          </div>
+        </div>
+        <article class="card" id="card"></article>
+      </section>
+    </aside>
+
+    <div class="map-wrap">
+      <div id="map"></div>
+      <div class="toast" id="toast" role="status" hidden></div>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="assets/i18n.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

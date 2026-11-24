@@ -1,0 +1,3653 @@
+{
+ "source": "GTA VI Landmarks Data, gtadb.org and all contributors, CC BY 4.0",
+ "places": [
+  {
+   "id": "L1378",
+   "name": "162°S",
+   "district": "Stockyard",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "2750 NW 3rd Ave, Miami, FL 33127",
+    "lat": 25.802388,
+    "lng": -80.201716
+   }
+  },
+  {
+   "id": "L1670",
+   "name": "247 Supermarket",
+   "district": "Crosstown",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "1770 Biscayne Blvd, Miami, FL 33132",
+    "lat": 25.792649,
+    "lng": -80.189156
+   }
+  },
+  {
+   "id": "L194",
+   "name": "7071 Warren Thacker Manor",
+   "district": "Rockridge",
+   "city": "Vice City",
+   "category": "home",
+   "flags": [
+    "demolished"
+   ],
+   "real": {
+    "name": "Martin Fine Villa",
+    "address": "780 NW 13th Ct, Miami, FL 33125",
+    "lat": 25.781123,
+    "lng": -80.217637
+   }
+  },
+  {
+   "id": "L1668",
+   "name": "84",
+   "district": "Stockyard",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "299 NW 25th St, Miami, FL 33127",
+    "lat": 25.800871,
+    "lng": -80.200936
+   }
+  },
+  {
+   "id": "L2361",
+   "name": "A1 Fashions",
+   "district": "Southside",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "10200 SW 183rd St, Miami, FL 33157",
+    "lat": 25.599069,
+    "lng": -80.356959
+   }
+  },
+  {
+   "id": "L1869",
+   "name": "Ajax Gym",
+   "district": "Vice Beach",
+   "city": "",
+   "category": "leisure",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "768 W 41st St, Miami Beach, FL 33140",
+    "lat": 25.813693,
+    "lng": -80.132342
+   }
+  },
+  {
+   "id": "L387",
+   "name": "Akio Hotel",
+   "district": "Tequesta Retreat",
+   "city": "Vice City",
+   "category": "hotel",
+   "flags": [
+    "demolished",
+    "enterable"
+   ],
+   "real": {
+    "name": "Mandarin Oriental",
+    "address": "500 Brickell Key Dr, Miami, FL 33131",
+    "lat": 25.764991,
+    "lng": -80.185395
+   }
+  },
+  {
+   "id": "L13",
+   "name": "Albany Hotel",
+   "district": "Washington Beach",
+   "city": "Vice Beach",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "Cadillac Hotel & Beach Club",
+    "address": "3925 Collins Ave, Miami Beach, FL 33140",
+    "lat": 25.812034,
+    "lng": -80.122802
+   }
+  },
+  {
+   "id": "L477",
+   "name": "Allied Air Hangar",
+   "district": "Vice City International Airport",
+   "city": "",
+   "category": "transport",
+   "flags": [],
+   "real": {
+    "name": "American Airlines Aircraft Maintenance Hangar",
+    "address": "Building 3095, NW 22nd St, Miami, FL 33126",
+    "lat": 25.797591,
+    "lng": -80.270138
+   }
+  },
+  {
+   "id": "L1672",
+   "name": "Allure Resort Services",
+   "district": "Crosstown",
+   "city": "Vice City",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "1786 Biscayne Blvd, Miami, FL 33132",
+    "lat": 25.792806,
+    "lng": -80.189285
+   }
+  },
+  {
+   "id": "L2537",
+   "name": "Alpha",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "work",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "TD Bank",
+    "address": "500 South Pointe Dr, Miami Beach, FL 33139",
+    "lat": 25.76811,
+    "lng": -80.134673
+   }
+  },
+  {
+   "id": "L205",
+   "name": "Arcadia Towers (N)",
+   "district": "Downtown",
+   "city": "Vice City",
+   "category": "home",
+   "flags": [],
+   "real": {
+    "name": "Vizcayne North Condominium",
+    "address": "244 Biscayne Blvd, Miami, FL 33132",
+    "lat": 25.776731,
+    "lng": -80.188335
+   }
+  },
+  {
+   "id": "L706",
+   "name": "Arcadia Towers (S)",
+   "district": "Downtown",
+   "city": "Vice City",
+   "category": "home",
+   "flags": [],
+   "real": {
+    "name": "Vizcayne South Condominium",
+    "address": "253 NE 2nd St, Miami, FL 33132",
+    "lat": 25.776508,
+    "lng": -80.189046
+   }
+  },
+  {
+   "id": "L175",
+   "name": "Archez",
+   "district": "Stockyard",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "2451 NW 5th Ave, Miami, FL 33127",
+    "lat": 25.800525,
+    "lng": -80.202789
+   }
+  },
+  {
+   "id": "L179",
+   "name": "Archipelago (N)",
+   "district": "Bayside",
+   "city": "Vice City",
+   "category": "home",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Quantum on the Bay",
+    "address": "1900 N Bayshore Dr, Miami, FL 33132",
+    "lat": 25.795045,
+    "lng": -80.187202
+   }
+  },
+  {
+   "id": "L744",
+   "name": "Archipelago (S)",
+   "district": "Bayside",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Quantum on the Bay",
+    "address": "1900 N Bayshore Dr, Miami, FL 33132",
+    "lat": 25.795045,
+    "lng": -80.187202
+   }
+  },
+  {
+   "id": "L165",
+   "name": "Arrow Gas Station",
+   "district": "Belville",
+   "city": "",
+   "category": "shop",
+   "flags": [
+    "unconfirmed"
+   ],
+   "real": {
+    "name": "",
+    "address": "9500 NW 7th Ave, Miami, FL 33150",
+    "lat": 25.86205,
+    "lng": -80.210083
+   }
+  },
+  {
+   "id": "L49",
+   "name": "Atlantis Hotel",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "Beacon South Beach",
+    "address": "720 Ocean Dr, Miami Beach, FL 33139",
+    "lat": 25.777173,
+    "lng": -80.13159
+   }
+  },
+  {
+   "id": "L1275",
+   "name": "Autograph",
+   "district": "Vice City International Airport",
+   "city": "",
+   "category": "other",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Signature Aviation",
+    "address": "5700 NW 36th St, Miami, FL 33122",
+    "lat": 25.806541,
+    "lng": -80.289835
+   }
+  },
+  {
+   "id": "L1113",
+   "name": "Autograph Flight Support Building",
+   "district": "Vice City International Airport",
+   "city": "",
+   "category": "transport",
+   "flags": [],
+   "real": {
+    "name": "Signature Flight Support Building",
+    "address": "5700 NW 36th St, Miami, FL 33122",
+    "lat": 25.806541,
+    "lng": -80.289835
+   }
+  },
+  {
+   "id": "L708",
+   "name": "Autograph Hangar 1",
+   "district": "Vice City International Airport",
+   "city": "",
+   "category": "transport",
+   "flags": [],
+   "real": {
+    "name": "Signature Aviation MIA",
+    "address": "5700 NW 36th St, Miami, FL 33122",
+    "lat": 25.806448,
+    "lng": -80.289579
+   }
+  },
+  {
+   "id": "L216",
+   "name": "Autograph Hangar 2",
+   "district": "Vice City International Airport",
+   "city": "",
+   "category": "transport",
+   "flags": [],
+   "real": {
+    "name": "Signature Aviation MIA",
+    "address": "5700 NW 36th St, Miami, FL 33122",
+    "lat": 25.806448,
+    "lng": -80.289579
+   }
+  },
+  {
+   "id": "L1656",
+   "name": "Avis",
+   "district": "Stockyard",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "175 NE 36th St, Miami, FL 33137",
+    "lat": 25.810735,
+    "lng": -80.191909
+   }
+  },
+  {
+   "id": "L1594",
+   "name": "Baller Dealership",
+   "district": "Southside",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [
+    "demolished"
+   ],
+   "real": {
+    "name": "",
+    "address": "16750 S Dixie Hwy, Miami, FL 33157",
+    "lat": 25.614641,
+    "lng": -80.347284
+   }
+  },
+  {
+   "id": "L1353",
+   "name": "Banner Hotel & Spa",
+   "district": "Vice City",
+   "city": "",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "Sheraton Miami Airport Hotel & Executive Meeting Center",
+    "address": "3900 NW 21st St, Miami, FL 33142",
+    "lat": 25.794472,
+    "lng": -80.259723
+   }
+  },
+  {
+   "id": "L2423",
+   "name": "Banner Parking Garage",
+   "district": "Salton",
+   "city": "Vice City",
+   "category": "transport",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "3900 Northwest 21st Street Miami Parking, 4000 NW 21st St, Miami, FL 33142",
+    "lat": 25.794788,
+    "lng": -80.258935
+   }
+  },
+  {
+   "id": "L22",
+   "name": "Bayfront Heights",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "Royal Palm South Beach",
+    "address": "1545 Collins Ave, Miami Beach, FL 33139",
+    "lat": 25.788397,
+    "lng": -80.12936
+   }
+  },
+  {
+   "id": "L1669",
+   "name": "Bean Machine",
+   "district": "Crosstown",
+   "city": "Vice City",
+   "category": "food",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "1752 Biscayne Blvd, Miami, FL 33132",
+    "lat": 25.792563,
+    "lng": -80.189273
+   }
+  },
+  {
+   "id": "L2165",
+   "name": "Bean Machine",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "food",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "601 Washington Ave, Miami Beach, FL 33139",
+    "lat": 25.775649,
+    "lng": -80.133634
+   }
+  },
+  {
+   "id": "L1540",
+   "name": "Big House",
+   "district": "Crosstown",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "1000 NE 1st Ave, Miami, FL 33132",
+    "lat": 25.784217,
+    "lng": -80.192552
+   }
+  },
+  {
+   "id": "L48",
+   "name": "Bobby Hurricane's",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "shop",
+   "flags": [],
+   "real": {
+    "name": "Johnny Rockets",
+    "address": "728 Ocean Dr, Miami Beach, FL 33139",
+    "lat": 25.777267,
+    "lng": -80.131547
+   }
+  },
+  {
+   "id": "L1379",
+   "name": "Bohemia",
+   "district": "Stockyard",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "2562 NW 2nd Ave, Miami, FL 33127",
+    "lat": 25.801309,
+    "lng": -80.199319
+   }
+  },
+  {
+   "id": "L710",
+   "name": "Break Inn",
+   "district": "Downtown",
+   "city": "Vice City",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "Holiday Inn Port of Miami-Downtown",
+    "address": "340 Biscayne Blvd, Miami, FL 33132",
+    "lat": 25.777833,
+    "lng": -80.188828
+   }
+  },
+  {
+   "id": "L2471",
+   "name": "Break Inn",
+   "district": "Salton",
+   "city": "Vice City",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "Holiday Inn Miami International Airport",
+    "address": "1111 S Royal Poinciana Blvd, Miami Springs, FL 33166",
+    "lat": 25.809152,
+    "lng": -80.26359
+   }
+  },
+  {
+   "id": "L524",
+   "name": "Buckme",
+   "district": "Downtown",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "100 Biscayne Blvd, Miami, FL 33132",
+    "lat": 25.775583,
+    "lng": -80.188188
+   }
+  },
+  {
+   "id": "L982",
+   "name": "Cafe Carraway",
+   "district": "Tequesta",
+   "city": "Vice City",
+   "category": "food",
+   "flags": [],
+   "real": {
+    "name": "The Hampton Social",
+    "address": "900 S Miami Ave, Miami, FL 33130",
+    "lat": 25.76502,
+    "lng": -80.193613
+   }
+  },
+  {
+   "id": "L2301",
+   "name": "Café Coyote",
+   "district": "Little Cuba",
+   "city": "Vice City",
+   "category": "food",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "950 FL-90, Miami, FL 33130",
+    "lat": 25.7658,
+    "lng": -80.209987
+   }
+  },
+  {
+   "id": "L745",
+   "name": "Calle Creativa",
+   "district": "Little Cuba",
+   "city": "Vice City",
+   "category": "civic",
+   "flags": [],
+   "real": {
+    "name": "Cubaocho Museum & Performing Arts Center",
+    "address": "1465 SW 8th St #106, Miami, FL 33135",
+    "lat": 25.765849,
+    "lng": -80.219357
+   }
+  },
+  {
+   "id": "L2377",
+   "name": "Carnicero",
+   "district": "Crosstown",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "723-735 NW 20th St, Miami, FL 33127",
+    "lat": 25.795465,
+    "lng": -80.20773
+   }
+  },
+  {
+   "id": "L1500",
+   "name": "Catalan Bay",
+   "district": "Vice-Dale County",
+   "city": "",
+   "category": "nature",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "Biscayne Bay, Florida",
+    "lat": 25.5722,
+    "lng": -80.2321
+   }
+  },
+  {
+   "id": "L1867",
+   "name": "Catalyst Realty",
+   "district": "Vice Beach",
+   "city": "",
+   "category": "shop",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "756 Arthur Godfrey Rd, Miami Beach, FL 33140",
+    "lat": 25.813719,
+    "lng": -80.132053
+   }
+  },
+  {
+   "id": "L687",
+   "name": "Chariot Empire Suites",
+   "district": "Downtown",
+   "city": "Vice City",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "YVE Hotel Miami",
+    "address": "146 Biscayne Blvd, Miami, FL 33132",
+    "lat": 25.776069,
+    "lng": -80.188217
+   }
+  },
+  {
+   "id": "L2313",
+   "name": "City of Vice Fire Rescue Station",
+   "district": "Salton",
+   "city": "Vice City",
+   "category": "civic",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "1111 NW 7th St, Miami, FL 33136",
+    "lat": 25.780537,
+    "lng": -80.213611
+   }
+  },
+  {
+   "id": "L569",
+   "name": "Clarissa Hotel",
+   "district": "Downtown",
+   "city": "Vice City",
+   "category": "hotel",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "InterContinental Miami",
+    "address": "100 Chopin Plaza, Miami, FL 33131",
+    "lat": 25.772191,
+    "lng": -80.185903
+   }
+  },
+  {
+   "id": "L409",
+   "name": "Conch King",
+   "district": "La Perle",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "9920 NW 27th Ave, Miami, FL 33147",
+    "lat": 25.865147,
+    "lng": -80.242696
+   }
+  },
+  {
+   "id": "L3281",
+   "name": "Conch King",
+   "district": "La Perle",
+   "city": "Vice City",
+   "category": "food",
+   "flags": [],
+   "real": {
+    "name": "Chef Créole",
+    "address": "200 NW 54th St, Miami, FL 33127",
+    "lat": 25.824914,
+    "lng": -80.200262
+   }
+  },
+  {
+   "id": "L697",
+   "name": "Container Crane #1",
+   "district": "Port Vice City",
+   "city": "",
+   "category": "work",
+   "flags": [],
+   "real": {
+    "name": "South Florida Container Terminal",
+    "address": "2650 Port Blvd, Miami, FL 33132",
+    "lat": 25.766974,
+    "lng": -80.146909
+   }
+  },
+  {
+   "id": "L696",
+   "name": "Container Crane #2",
+   "district": "Port Vice City",
+   "city": "",
+   "category": "work",
+   "flags": [],
+   "real": {
+    "name": "South Florida Container Terminal",
+    "address": "2650 Port Blvd, Miami, FL 33132",
+    "lat": 25.766974,
+    "lng": -80.146909
+   }
+  },
+  {
+   "id": "L695",
+   "name": "Container Crane #3",
+   "district": "Port Vice City",
+   "city": "",
+   "category": "work",
+   "flags": [],
+   "real": {
+    "name": "South Florida Container Terminal",
+    "address": "2650 Port Blvd, Miami, FL 33132",
+    "lat": 25.766974,
+    "lng": -80.146909
+   }
+  },
+  {
+   "id": "L694",
+   "name": "Container Crane #4",
+   "district": "Port Vice City",
+   "city": "",
+   "category": "work",
+   "flags": [],
+   "real": {
+    "name": "South Florida Container Terminal",
+    "address": "2650 Port Blvd, Miami, FL 33132",
+    "lat": 25.766974,
+    "lng": -80.146909
+   }
+  },
+  {
+   "id": "L693",
+   "name": "Container Crane #5",
+   "district": "Port Vice City",
+   "city": "",
+   "category": "work",
+   "flags": [],
+   "real": {
+    "name": "South Florida Container Terminal",
+    "address": "2650 Port Blvd, Miami, FL 33132",
+    "lat": 25.766974,
+    "lng": -80.146909
+   }
+  },
+  {
+   "id": "L692",
+   "name": "Container Crane #6",
+   "district": "Port Vice City",
+   "city": "",
+   "category": "work",
+   "flags": [],
+   "real": {
+    "name": "South Florida Container Terminal",
+    "address": "2650 Port Blvd, Miami, FL 33132",
+    "lat": 25.766974,
+    "lng": -80.146909
+   }
+  },
+  {
+   "id": "L691",
+   "name": "Container Crane #7",
+   "district": "Port Vice City",
+   "city": "",
+   "category": "work",
+   "flags": [],
+   "real": {
+    "name": "South Florida Container Terminal",
+    "address": "2650 Port Blvd, Miami, FL 33132",
+    "lat": 25.766974,
+    "lng": -80.146909
+   }
+  },
+  {
+   "id": "L690",
+   "name": "Container Crane #8",
+   "district": "Port Vice City",
+   "city": "",
+   "category": "work",
+   "flags": [],
+   "real": {
+    "name": "South Florida Container Terminal",
+    "address": "2650 Port Blvd, Miami, FL 33132",
+    "lat": 25.766974,
+    "lng": -80.146909
+   }
+  },
+  {
+   "id": "L689",
+   "name": "Container Crane #9",
+   "district": "Port Vice City",
+   "city": "",
+   "category": "work",
+   "flags": [],
+   "real": {
+    "name": "South Florida Container Terminal",
+    "address": "2650 Port Blvd, Miami, FL 33132",
+    "lat": 25.766974,
+    "lng": -80.146909
+   }
+  },
+  {
+   "id": "L1910",
+   "name": "Convincing Korean BBQ",
+   "district": "Peacock Bay",
+   "city": "Vice City",
+   "category": "food",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "3425 Main Hwy, Coconut Grove, FL 33133",
+    "lat": 25.727372,
+    "lng": -80.242678
+   }
+  },
+  {
+   "id": "L51",
+   "name": "Cordelia",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "Park Central Hotel",
+    "address": "640 Ocean Dr, Miami Beach, FL 33139",
+    "lat": 25.776361,
+    "lng": -80.131642
+   }
+  },
+  {
+   "id": "L47",
+   "name": "Cortez Hotel",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "Colony Hotel",
+    "address": "736 Ocean Dr, Miami Beach, FL 33139",
+    "lat": 25.777426,
+    "lng": -80.13142
+   }
+  },
+  {
+   "id": "L1060",
+   "name": "Cospace",
+   "district": "Bayside",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "1401 Biscayne Blvd, Miami, FL 33132",
+    "lat": 25.788571,
+    "lng": -80.188858
+   }
+  },
+  {
+   "id": "L178",
+   "name": "Crescent",
+   "district": "Bayside",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "333 S Miami Ave, Miami, FL 33130",
+    "lat": 25.771041,
+    "lng": -80.193084
+   }
+  },
+  {
+   "id": "L17",
+   "name": "Crystal",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "The Ritz-Carlton South Beach",
+    "address": "1 Lincoln Rd, Miami Beach, FL 33139",
+    "lat": 25.790938,
+    "lng": -80.129184
+   }
+  },
+  {
+   "id": "L2311",
+   "name": "DJB Shipyard",
+   "district": "Salton",
+   "city": "Vice City",
+   "category": "transport",
+   "flags": [],
+   "real": {
+    "name": "Chamonix Marina",
+    "address": "3480 NW 21st St, Miami, FL 33142",
+    "lat": 25.794934,
+    "lng": -80.251785
+   }
+  },
+  {
+   "id": "L1790",
+   "name": "Diamond Dawgs",
+   "district": "Vice Beach",
+   "city": "",
+   "category": "shop",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Sibbling Jewelers",
+    "address": "546 Arthur Godfrey Rd, Miami Beach, FL 33140",
+    "lat": 25.813632,
+    "lng": -80.130287
+   }
+  },
+  {
+   "id": "L2745",
+   "name": "Diangelo",
+   "district": "Downtown",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "200 S Miami Ave, Miami, FL 33130",
+    "lat": 25.772371,
+    "lng": -80.194176
+   }
+  },
+  {
+   "id": "L438",
+   "name": "Dock Ring",
+   "district": "Shoreline",
+   "city": "Vice City",
+   "category": "leisure",
+   "flags": [],
+   "real": {
+    "name": "Skyviews Miami Observation Wheel",
+    "address": "401 Biscayne Blvd, Miami, FL 33132",
+    "lat": 25.77702,
+    "lng": -80.184519
+   }
+  },
+  {
+   "id": "L25",
+   "name": "Dominion Hotel",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "Cardozo South Beach",
+    "address": "1300 Ocean Dr, Miami Beach, FL 33139",
+    "lat": 25.784229,
+    "lng": -80.130269
+   }
+  },
+  {
+   "id": "L761",
+   "name": "Donovan Roeder Jr. Community Center",
+   "district": "Key Lento",
+   "city": "",
+   "category": "civic",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "17201 SW 103rd Ave, Miami, FL 33157",
+    "lat": 25.609488,
+    "lng": -80.358732
+   }
+  },
+  {
+   "id": "L1698",
+   "name": "Downtown Metro Station",
+   "district": "Downtown",
+   "city": "Vice City",
+   "category": "transport",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Miami Worldcenter Station",
+    "address": "Miami, FL 33130",
+    "lat": 25.782503,
+    "lng": -80.19062
+   }
+  },
+  {
+   "id": "L104",
+   "name": "Effluvia",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "nightlife",
+   "flags": [
+    "closed",
+    "enterable"
+   ],
+   "real": {
+    "name": "Juvia",
+    "address": "1111 Lincoln Rd, Miami Beach, FL 33139",
+    "lat": 25.790714,
+    "lng": -80.140067
+   }
+  },
+  {
+   "id": "L212",
+   "name": "El Gabeto Center",
+   "district": "Little Cuba",
+   "city": "Vice City",
+   "category": "civic",
+   "flags": [],
+   "real": {
+    "name": "St. John Bosco Catholic Church",
+    "address": "1349 W Flagler St, Miami, FL 33135",
+    "lat": 25.773578,
+    "lng": -80.217328
+   }
+  },
+  {
+   "id": "L2824",
+   "name": "El Rincón Notorio",
+   "district": "Little Cuba",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "1388 SW 8th St, Miami, FL 33135",
+    "lat": 25.765546,
+    "lng": -80.21823
+   }
+  },
+  {
+   "id": "L1482",
+   "name": "Electric Fang Tattoo",
+   "district": "Stockyard",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "450 NW 28th St, Miami, FL 33127",
+    "lat": 25.802534,
+    "lng": -80.202511
+   }
+  },
+  {
+   "id": "L2195",
+   "name": "Electrotoke",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "other",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "1635 Washington Ave, Miami Beach, FL 33139",
+    "lat": 25.790016,
+    "lng": -80.131673
+   }
+  },
+  {
+   "id": "L1369",
+   "name": "Euroform Automotive",
+   "district": "Little Cuba",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "1779 W Flagler St, Miami, FL 33135",
+    "lat": 25.772962,
+    "lng": -80.224594
+   }
+  },
+  {
+   "id": "L1789",
+   "name": "Eye & Dry",
+   "district": "Vice Beach",
+   "city": "",
+   "category": "shop",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "552 Arthur Godfrey Rd, Miami Beach, FL 33140",
+    "lat": 25.813626,
+    "lng": -80.130415
+   }
+  },
+  {
+   "id": "L1507",
+   "name": "Fake Tunnel Mural",
+   "district": "Vice Decor District",
+   "city": "Vice City",
+   "category": "leisure",
+   "flags": [
+    "unconfirmed"
+   ],
+   "real": {
+    "name": "Vortex",
+    "address": "RR65+Q4 Miami, Florida",
+    "lat": 25.811937,
+    "lng": -80.192188
+   }
+  },
+  {
+   "id": "L3217",
+   "name": "Fenestra Plaza",
+   "district": "Tequesta",
+   "city": "Vice City",
+   "category": "civic",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "QR85+WWQ Miami, Florida",
+    "lat": 25.767338,
+    "lng": -80.190141
+   }
+  },
+  {
+   "id": "L499",
+   "name": "Ficroth Capital",
+   "district": "Tequesta",
+   "city": "Vice City",
+   "category": "work",
+   "flags": [
+    "demolished",
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "1401 Brickell Ave, Miami, FL 33131",
+    "lat": 25.75985,
+    "lng": -80.191982
+   }
+  },
+  {
+   "id": "L2585",
+   "name": "Ficroth Capital Garage",
+   "district": "Tequesta",
+   "city": "Vice City",
+   "category": "transport",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "151 SE 14th Terrace, Miami, FL 33131",
+    "lat": 25.759748,
+    "lng": -80.191539
+   }
+  },
+  {
+   "id": "L87",
+   "name": "Firefly Plaza",
+   "district": "Vice Beach",
+   "city": "",
+   "category": "leisure",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "2421 Lake Pancoast Dr, Miami Beach, FL 33140",
+    "lat": 25.8007,
+    "lng": -80.127723
+   }
+  },
+  {
+   "id": "L3098",
+   "name": "Flash FM",
+   "district": "Vice-Dale County",
+   "city": "",
+   "category": "work",
+   "flags": [
+    "demolished",
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "3925 N Federal Hwy, Miami, FL 33137",
+    "lat": 25.813802,
+    "lng": -80.18975
+   }
+  },
+  {
+   "id": "L1786",
+   "name": "Fleeca",
+   "district": "Vice Beach",
+   "city": "",
+   "category": "shop",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "First Citizens Bank",
+    "address": "555 Arthur Godfrey Rd, Miami Beach, FL 33140",
+    "lat": 25.814142,
+    "lng": -80.130341
+   }
+  },
+  {
+   "id": "L2150",
+   "name": "Fleeca",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "shop",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "830 5th St, Miami Beach, FL 33139",
+    "lat": 25.774155,
+    "lng": -80.136883
+   }
+  },
+  {
+   "id": "L196",
+   "name": "Fleeca Field",
+   "district": "Rockridge",
+   "city": "Vice City",
+   "category": "leisure",
+   "flags": [],
+   "real": {
+    "name": "LoanDepot Park",
+    "address": "501 Marlins Way, Miami, FL 33125",
+    "lat": 25.778149,
+    "lng": -80.2196
+   }
+  },
+  {
+   "id": "L2151",
+   "name": "Frills & Fancy",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "shop",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "1224 Washington Ave, Miami Beach, FL 33139",
+    "lat": 25.783484,
+    "lng": -80.132402
+   }
+  },
+  {
+   "id": "L2265",
+   "name": "Fufu",
+   "district": "Vice Decor District",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [],
+   "real": {
+    "name": "Loewe",
+    "address": "110 NE 39th St, Miami, FL 33137",
+    "lat": 25.812538,
+    "lng": -80.19306
+   }
+  },
+  {
+   "id": "L2428",
+   "name": "G. Hanson",
+   "district": "Salton",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "3275 NW 42nd Ave, Miami, FL 33142",
+    "lat": 25.804486,
+    "lng": -80.263521
+   }
+  },
+  {
+   "id": "L186",
+   "name": "Galina Ballet Opera House",
+   "district": "Bayside",
+   "city": "Vice City",
+   "category": "leisure",
+   "flags": [],
+   "real": {
+    "name": "Adrienne Arsht Center",
+    "address": "1300 Biscayne Blvd, Miami, FL 33132",
+    "lat": 25.787628,
+    "lng": -80.189903
+   }
+  },
+  {
+   "id": "L1598",
+   "name": "Gator Plaza",
+   "district": "Southside",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Dolphin Mall",
+    "address": "11401 NW 12th St Ste 514, Miami, FL 33172",
+    "lat": 25.788703,
+    "lng": -80.381175
+   }
+  },
+  {
+   "id": "L182",
+   "name": "Gemini Tower",
+   "district": "Bayside",
+   "city": "Vice City",
+   "category": "home",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "The Grand",
+    "address": "1717 N Bayshore Dr, Miami, FL 33132",
+    "lat": 25.791621,
+    "lng": -80.186372
+   }
+  },
+  {
+   "id": "L478",
+   "name": "Glamour Clothing",
+   "district": "Stockyard",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "2401 NW 5th Ave Unit 2-3, Miami, FL 33127",
+    "lat": 25.800103,
+    "lng": -80.202928
+   }
+  },
+  {
+   "id": "L1797",
+   "name": "Glazin' Glory",
+   "district": "Vice Beach",
+   "city": "",
+   "category": "other",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "341 FL-112, Miami Beach, FL 33140",
+    "lat": 25.813978,
+    "lng": -80.127442
+   }
+  },
+  {
+   "id": "L2506",
+   "name": "Go Postal",
+   "district": "Rockridge",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "236 SW 22nd Ave, Miami, FL 33135",
+    "lat": 25.77024,
+    "lng": -80.231061
+   }
+  },
+  {
+   "id": "L2584",
+   "name": "Go Postal Office",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "1621 Alton Rd, Miami Beach, FL 33139",
+    "lat": 25.789742,
+    "lng": -80.141017
+   }
+  },
+  {
+   "id": "L733",
+   "name": "Goliath",
+   "district": "Mariana County",
+   "city": "",
+   "category": "work",
+   "flags": [],
+   "real": {
+    "name": "Titan America",
+    "address": "11000 NW 121st Way, Medley, FL 33178",
+    "lat": 25.877025,
+    "lng": -80.37436
+   }
+  },
+  {
+   "id": "L240",
+   "name": "Grand Majestic",
+   "district": "Tequesta",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "One Broadway",
+    "address": "1451 S Miami Ave, Miami, FL 33130",
+    "lat": 25.759239,
+    "lng": -80.193579
+   }
+  },
+  {
+   "id": "L1317",
+   "name": "Haitian-American Cultural Center",
+   "district": "La Perle",
+   "city": "Vice City",
+   "category": "work",
+   "flags": [],
+   "real": {
+    "name": "Little Haiti Cultural Complex",
+    "address": "212 NE 59th Terrace, Miami, FL 33137",
+    "lat": 25.830386,
+    "lng": -80.191321
+   }
+  },
+  {
+   "id": "L202",
+   "name": "Harrelson Building",
+   "district": "Downtown",
+   "city": "Vice City",
+   "category": "civic",
+   "flags": [],
+   "real": {
+    "name": "Rohde Building",
+    "address": "401 NW 2nd Ave, Miami, FL 33128",
+    "lat": 25.778422,
+    "lng": -80.197224
+   }
+  },
+  {
+   "id": "L221",
+   "name": "Heath Tower",
+   "district": "Downtown",
+   "city": "Vice City",
+   "category": "work",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Miami Tower",
+    "address": "100 SE 2nd St, Miami, FL 33131",
+    "lat": 25.772323,
+    "lng": -80.191602
+   }
+  },
+  {
+   "id": "L1555",
+   "name": "Hobbs Milford",
+   "district": "Vice Beach",
+   "city": "",
+   "category": "shop",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Wells Fargo",
+    "address": "750 Arthur Godfrey Rd, Miami Beach, FL 33140",
+    "lat": 25.81365,
+    "lng": -80.131858
+   }
+  },
+  {
+   "id": "L2178",
+   "name": "Hobbs Milford",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "shop",
+   "flags": [
+    "demolished",
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "1679 Washington Ave, Miami Beach, FL 33139",
+    "lat": 25.792018,
+    "lng": -80.131639
+   }
+  },
+  {
+   "id": "L511",
+   "name": "Hoodwinks Bar",
+   "district": "Salton",
+   "city": "Vice City",
+   "category": "leisure",
+   "flags": [
+    "unconfirmed"
+   ],
+   "real": {
+    "name": "",
+    "address": "378 NW 5th St, Miami, FL 33128",
+    "lat": 25.778658,
+    "lng": -80.201088
+   }
+  },
+  {
+   "id": "L32",
+   "name": "Hotel Dixon",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "Hotel Victor",
+    "address": "1144 Ocean Dr, Miami Beach, FL 33139",
+    "lat": 25.782402,
+    "lng": -80.130539
+   }
+  },
+  {
+   "id": "L41",
+   "name": "Hotel Neptune",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "Shore Park Hotel",
+    "address": "820 Ocean Dr, Miami Beach, FL 33139",
+    "lat": 25.778415,
+    "lng": -80.131334
+   }
+  },
+  {
+   "id": "L324",
+   "name": "Hotel Valetta",
+   "district": "Vice Beach",
+   "city": "",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "Motel Ankara",
+    "address": "Miami Beach, FL 33139",
+    "lat": 25.800214,
+    "lng": -80.127387
+   }
+  },
+  {
+   "id": "L241",
+   "name": "International Online Unlimited",
+   "district": "Tequesta",
+   "city": "Vice City",
+   "category": "work",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "1450 Brickell Ave, Miami, FL 33131",
+    "lat": 25.758836,
+    "lng": -80.193161
+   }
+  },
+  {
+   "id": "L551",
+   "name": "J.C. Anglin United States Courthouse",
+   "district": "Crosstown",
+   "city": "Vice City",
+   "category": "civic",
+   "flags": [],
+   "real": {
+    "name": "C. Clyde Atkins U.S Courthouse",
+    "address": "301 N Miami Ave, Miami, FL 33128",
+    "lat": 25.777536,
+    "lng": -80.193311
+   }
+  },
+  {
+   "id": "L172",
+   "name": "Jack of Hearts",
+   "district": "Crosstown",
+   "city": "Vice City",
+   "category": "nightlife",
+   "flags": [
+    "demolished",
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "120 NE 19th Terrace, Miami, FL 33132",
+    "lat": 25.795345,
+    "lng": -80.192725
+   }
+  },
+  {
+   "id": "L408",
+   "name": "Jeudy's Food Depot",
+   "district": "La Perle",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "9900 NW 27th Ave, Miami, FL 33147",
+    "lat": 25.865022,
+    "lng": -80.242678
+   }
+  },
+  {
+   "id": "L1933",
+   "name": "Josefina",
+   "district": "Crosstown",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "1800 Biscayne Blvd, Miami, FL 33132",
+    "lat": 25.794114,
+    "lng": -80.189214
+   }
+  },
+  {
+   "id": "L2759",
+   "name": "Joyeria Empenos",
+   "district": "Rockridge",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "Joyeria Empenos",
+    "address": "1757 NW 7th St, Miami, FL 33125",
+    "lat": 25.77834,
+    "lng": -80.275919
+   }
+  },
+  {
+   "id": "L1596",
+   "name": "Juicy Joes",
+   "district": "Southside",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "18640 SW 104th Ave, Cutler Bay, FL 33157",
+    "lat": 25.595365,
+    "lng": -80.360901
+   }
+  },
+  {
+   "id": "L2188",
+   "name": "Juxta Gallery",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "leisure",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "1626 Michigan Ave, Miami Beach, FL 33139",
+    "lat": 25.79001,
+    "lng": -80.138987
+   }
+  },
+  {
+   "id": "L204",
+   "name": "Kensinger Tower",
+   "district": "Downtown",
+   "city": "Vice City",
+   "category": "civic",
+   "flags": [],
+   "real": {
+    "name": "Wilkie D. Ferguson Jr. U.S. Courthouse",
+    "address": "400 N Miami Ave, Miami, FL 33128",
+    "lat": 25.778113,
+    "lng": -80.194664
+   }
+  },
+  {
+   "id": "L611",
+   "name": "Kington Hotel",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "1221 Collins Ave, Miami Beach, FL 33139",
+    "lat": 25.783223,
+    "lng": -80.131039
+   }
+  },
+  {
+   "id": "L1318",
+   "name": "La Perle Caribbean Market",
+   "district": "La Perle",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [],
+   "real": {
+    "name": "Caribbean Marketplace",
+    "address": "5925 NE 2nd Ave, Miami, FL 33137",
+    "lat": 25.830369,
+    "lng": -80.191754
+   }
+  },
+  {
+   "id": "L533",
+   "name": "Leaf Links Golf Club",
+   "district": "Vice-Dale County",
+   "city": "",
+   "category": "leisure",
+   "flags": [],
+   "real": {
+    "name": "Indian Creek Country Club",
+    "address": "55 Indian Creek Island Rd, Indian Creek, FL 33154",
+    "lat": 25.875664,
+    "lng": -80.141286
+   }
+  },
+  {
+   "id": "L2189",
+   "name": "Lickety Split",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "other",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "1626 Michigan Ave, Miami Beach, FL 33139",
+    "lat": 25.79001,
+    "lng": -80.138987
+   }
+  },
+  {
+   "id": "L913",
+   "name": "Limit HQ",
+   "district": "Downtown",
+   "city": "Vice City",
+   "category": "work",
+   "flags": [],
+   "real": {
+    "name": "Bank of America Financial Center",
+    "address": "150 W Flagler St, Miami, FL 33130",
+    "lat": 25.773572,
+    "lng": -80.197052
+   }
+  },
+  {
+   "id": "L3079",
+   "name": "Little Cuba Souvenir Shop",
+   "district": "Little Cuba",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "1442 SW 8th St, Miami, FL 33135",
+    "lat": 25.765592,
+    "lng": -80.219216
+   }
+  },
+  {
+   "id": "L2747",
+   "name": "Little Gems Jewellery",
+   "district": "Rockridge",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "210 SW 22nd Ave, Miami, FL 33135",
+    "lat": 25.77059,
+    "lng": -80.231153
+   }
+  },
+  {
+   "id": "L470",
+   "name": "Lombank",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "work",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Lincoln Building",
+    "address": "350 Lincoln Rd, Miami Beach, FL 33139",
+    "lat": 25.790348,
+    "lng": -80.131629
+   }
+  },
+  {
+   "id": "L501",
+   "name": "Lombank",
+   "district": "Tequesta",
+   "city": "Vice City",
+   "category": "work",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "1200 Brickell Ave, Miami, FL 33131",
+    "lat": 25.761999,
+    "lng": -80.192345
+   }
+  },
+  {
+   "id": "L1072",
+   "name": "Lombank",
+   "district": "Vice Beach",
+   "city": "",
+   "category": "work",
+   "flags": [
+    "unconfirmed"
+   ],
+   "real": {
+    "name": "",
+    "address": "1824 Alton Rd, Miami Beach, FL 33139",
+    "lat": 25.793992,
+    "lng": -80.141703
+   }
+  },
+  {
+   "id": "L2155",
+   "name": "Lombank",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "work",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "704 1st St, Miami Beach, FL 33139",
+    "lat": 25.769711,
+    "lng": -80.135444
+   }
+  },
+  {
+   "id": "L195",
+   "name": "Lou's",
+   "district": "Rockridge",
+   "city": "Vice City",
+   "category": "food",
+   "flags": [],
+   "real": {
+    "name": "Palace Cafe & Dairy",
+    "address": "1300 NW 7th St, Miami, FL 33125",
+    "lat": 25.779969,
+    "lng": -80.21668
+   }
+  },
+  {
+   "id": "L475",
+   "name": "Lucia's Apartment",
+   "district": "Crosstown",
+   "city": "Vice City",
+   "category": "home",
+   "flags": [
+    "demolished",
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "419 NE 4th Ave, Miami, FL 33132",
+    "lat": 25.79511,
+    "lng": -80.187628
+   }
+  },
+  {
+   "id": "L1868",
+   "name": "Lulu",
+   "district": "Vice Beach",
+   "city": "",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "764 Arthur Godfrey Rd, Miami Beach, FL 33140",
+    "lat": 25.813719,
+    "lng": -80.132241
+   }
+  },
+  {
+   "id": "L1660",
+   "name": "Lârss & Elbö",
+   "district": "Stockyard",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "3600 NE 2nd Ave, Miami, FL 33137",
+    "lat": 25.810791,
+    "lng": -80.191528
+   }
+  },
+  {
+   "id": "L2360",
+   "name": "Mami's Grocery Market",
+   "district": "Southside",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "10200 SW 183rd St, Miami, FL 33157",
+    "lat": 25.599069,
+    "lng": -80.356959
+   }
+  },
+  {
+   "id": "L3228",
+   "name": "Mammacita's",
+   "district": "Downtown",
+   "city": "Vice City",
+   "category": "food",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "200 S Biscayne Blvd, Miami, FL 33131",
+    "lat": 25.772533,
+    "lng": -80.187602
+   }
+  },
+  {
+   "id": "L1108",
+   "name": "Marco Wholesale Footwear",
+   "district": "Stockyard",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "2451 NW 5th Ave, Miami, FL 33127",
+    "lat": 25.800525,
+    "lng": -80.202789
+   }
+  },
+  {
+   "id": "L1599",
+   "name": "Marlin Motors",
+   "district": "Southside",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "16165 S Dixie Hwy, Miami, FL 33157",
+    "lat": 25.620501,
+    "lng": -80.34451
+   }
+  },
+  {
+   "id": "L1609",
+   "name": "Mattress Madness",
+   "district": "Southside",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "18640 SW 104th Ct, Cutler Bay, FL 33157",
+    "lat": 25.595254,
+    "lng": -80.361667
+   }
+  },
+  {
+   "id": "L208",
+   "name": "Megamundo",
+   "district": "Downtown",
+   "city": "Vice City",
+   "category": "home",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "One Biscayne Tower",
+    "address": "2 Biscayne Blvd, Miami, FL 33131",
+    "lat": 25.773928,
+    "lng": -80.187958
+   }
+  },
+  {
+   "id": "L1689",
+   "name": "Melody Theater",
+   "district": "Crosstown",
+   "city": "Vice City",
+   "category": "leisure",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "825 NW 2nd Ave, Miami, FL 33136",
+    "lat": 25.782171,
+    "lng": -80.197706
+   }
+  },
+  {
+   "id": "L1015",
+   "name": "Muscle Sands",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "leisure",
+   "flags": [],
+   "real": {
+    "name": "Muscle Beach South Beach",
+    "address": "873 Ocean Dr, Miami Beach, FL 33139",
+    "lat": 25.778812,
+    "lng": -80.130596
+   }
+  },
+  {
+   "id": "L190",
+   "name": "NINE1NINE",
+   "district": "Downtown",
+   "city": "Vice City",
+   "category": "nightlife",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "E11EVEN",
+    "address": "29 NE 11th St, Miami, FL 33132",
+    "lat": 25.784968,
+    "lng": -80.193557
+   }
+  },
+  {
+   "id": "L1472",
+   "name": "National Coast Guard",
+   "district": "Vice-Dale County",
+   "city": "",
+   "category": "other",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "US Coast Guard Base Miami Beach",
+    "address": "100 MacArthur Cswy, Miami Beach, FL 33139",
+    "lat": 25.771307,
+    "lng": -80.145646
+   }
+  },
+  {
+   "id": "L200",
+   "name": "Navaro Shipping Terminal",
+   "district": "Rockridge",
+   "city": "Vice City",
+   "category": "work",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "2974 Shipping Terminal, 2974 NW N River Dr, Miami, FL 33142",
+    "lat": 25.796602,
+    "lng": -80.246466
+   }
+  },
+  {
+   "id": "L2183",
+   "name": "Ocean Beach Pharmacy",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "other",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Lincoln Building",
+    "address": "350 Lincoln Rd, Miami Beach, FL 33139",
+    "lat": 25.790348,
+    "lng": -80.131629
+   }
+  },
+  {
+   "id": "L36",
+   "name": "Ocean View Hotel",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "hotel",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Clevelander South Beach",
+    "address": "1020 Ocean Dr, Miami Beach, FL 33139",
+    "lat": 25.780866,
+    "lng": -80.130846
+   }
+  },
+  {
+   "id": "L437",
+   "name": "Palaestra Tower",
+   "district": "Bayside",
+   "city": "Vice City",
+   "category": "leisure",
+   "flags": [],
+   "real": {
+    "name": "Sears Tower",
+    "address": "1300 US-1, Miami, FL 33132",
+    "lat": 25.787355,
+    "lng": -80.189368
+   }
+  },
+  {
+   "id": "L2036",
+   "name": "Palometa Seafood Restaurant",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "food",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "730 1st St, Miami Beach, FL 33139",
+    "lat": 25.769686,
+    "lng": -80.135749
+   }
+  },
+  {
+   "id": "L486",
+   "name": "Panos Plaza",
+   "district": "Bayside",
+   "city": "Vice City",
+   "category": "leisure",
+   "flags": [],
+   "real": {
+    "name": "Pérez Art Museum Miami",
+    "address": "1103 Biscayne Blvd, Miami, FL 33132",
+    "lat": 25.785931,
+    "lng": -80.186191
+   }
+  },
+  {
+   "id": "L1870",
+   "name": "Papasco's",
+   "district": "Vice Beach",
+   "city": "",
+   "category": "shop",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "4017 Prairie Ave, Miami Beach, FL 33140",
+    "lat": 25.813476,
+    "lng": -80.130307
+   }
+  },
+  {
+   "id": "L35",
+   "name": "Paramour Hotel",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "Congress Hotel",
+    "address": "1036 Ocean Dr, Miami Beach, FL 33139",
+    "lat": 25.781128,
+    "lng": -80.130799
+   }
+  },
+  {
+   "id": "L2351",
+   "name": "Partytown USA",
+   "district": "Salton",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "742 NW 5th Ave #33136, Miami, FL 33136",
+    "lat": 25.781466,
+    "lng": -80.203176
+   }
+  },
+  {
+   "id": "L2640",
+   "name": "Paño Rojo",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "448 Española Wy, Miami Beach, FL 33139",
+    "lat": 25.786804,
+    "lng": -80.132751
+   }
+  },
+  {
+   "id": "L131",
+   "name": "Pegassi Residences North Tower",
+   "district": "Tequesta Retreat",
+   "city": "Vice City",
+   "category": "home",
+   "flags": [
+    "enterable",
+    "unconfirmed"
+   ],
+   "real": {
+    "name": "Aston Martin Residences",
+    "address": "300 Biscayne Blvd Way, Miami, FL 33131",
+    "lat": 25.770528,
+    "lng": -80.188261
+   }
+  },
+  {
+   "id": "L130",
+   "name": "Pegassi Residences South Tower",
+   "district": "Tequesta Retreat",
+   "city": "Vice City",
+   "category": "home",
+   "flags": [
+    "enterable",
+    "unconfirmed"
+   ],
+   "real": {
+    "name": "The Ritz-Carlton Residences",
+    "address": "15701 Collins Ave, Sunny Isles Beach, FL 33160",
+    "lat": 25.922197,
+    "lng": -80.121749
+   }
+  },
+  {
+   "id": "L383",
+   "name": "Pegassi Residences West Tower",
+   "district": "Tequesta Retreat",
+   "city": "Vice City",
+   "category": "work",
+   "flags": [
+    "unconfirmed"
+   ],
+   "real": {
+    "name": "Porsche Design Tower Miami",
+    "address": "18555 Collins Ave Apt 2701, Sunny Isles Beach, FL 33160",
+    "lat": 25.948202,
+    "lng": -80.119917
+   }
+  },
+  {
+   "id": "L2352",
+   "name": "Perfecto Boatyard & Marina",
+   "district": "Little Cuba",
+   "city": "Vice City",
+   "category": "transport",
+   "flags": [
+    "demolished",
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "1270 NW 11th St, Miami, FL 33125",
+    "lat": 25.783621,
+    "lng": -80.216182
+   }
+  },
+  {
+   "id": "L1932",
+   "name": "Perkins Deli",
+   "district": "Crosstown",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "1800 Biscayne Blvd, Miami, FL 33132",
+    "lat": 25.794114,
+    "lng": -80.189214
+   }
+  },
+  {
+   "id": "L1074",
+   "name": "Phil's Ammu-Nation",
+   "district": "Leonida",
+   "city": "",
+   "category": "shop",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "11401 NW 12th St, Miami, FL 33172",
+    "lat": 25.788703,
+    "lng": -80.381175
+   }
+  },
+  {
+   "id": "L222",
+   "name": "Piker Financial Center",
+   "district": "Downtown",
+   "city": "Vice City",
+   "category": "work",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Southeast Financial Center",
+    "address": "200 S Biscayne Blvd, Miami, FL 33131",
+    "lat": 25.772317,
+    "lng": -80.187668
+   }
+  },
+  {
+   "id": "L3000",
+   "name": "Port VC Tunnel",
+   "district": "Vice-Dale County",
+   "city": "",
+   "category": "transport",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "Port Miami Tunnel Miami, FL 33132",
+    "lat": 25.78079,
+    "lng": -80.174652
+   }
+  },
+  {
+   "id": "L432",
+   "name": "Port Vice City Tunnel",
+   "district": "Vice City",
+   "city": "",
+   "category": "transport",
+   "flags": [],
+   "real": {
+    "name": "Port of Miami Tunnel",
+    "address": "FL-887, Miami, FL 33132",
+    "lat": 25.775388,
+    "lng": -80.172878
+   }
+  },
+  {
+   "id": "L1655",
+   "name": "Redford Gallery",
+   "district": "Stockyard",
+   "city": "Vice City",
+   "category": "leisure",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "444 NW 28th St, Miami, FL 33127",
+    "lat": 25.802484,
+    "lng": -80.202457
+   }
+  },
+  {
+   "id": "L151",
+   "name": "Redwood Suites",
+   "district": "Rialto Islands",
+   "city": "",
+   "category": "home",
+   "flags": [],
+   "real": {
+    "name": "Venetian Isle Condominium",
+    "address": "801 N Venetian Dr, Miami Beach, FL 33139",
+    "lat": 25.790646,
+    "lng": -80.178909
+   }
+  },
+  {
+   "id": "L3408",
+   "name": "Ricardo's Tires",
+   "district": "La Perle",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [],
+   "real": {
+    "name": "Al's Auto Services Center",
+    "address": "17501 NW 27th Ave, Miami Gardens, FL 33056",
+    "lat": 25.933983,
+    "lng": -80.244581
+   }
+  },
+  {
+   "id": "L2541",
+   "name": "Ride & Glide",
+   "district": "Salton",
+   "city": "Vice City",
+   "category": "leisure",
+   "flags": [],
+   "real": {
+    "name": "Park N Fly",
+    "address": "3901 NW 28th St, Miami, FL 33142",
+    "lat": 25.801344,
+    "lng": -80.261401
+   }
+  },
+  {
+   "id": "L422",
+   "name": "Rivo Bridge",
+   "district": "Rialto Islands",
+   "city": "",
+   "category": "transport",
+   "flags": [],
+   "real": {
+    "name": "West Venetian Causeway Bridge",
+    "address": "North, Atlantic Ave, Miami, FL 33132",
+    "lat": 25.789879,
+    "lng": -80.181301
+   }
+  },
+  {
+   "id": "L199",
+   "name": "Rockridge Neighborhood Service Center",
+   "district": "Rockridge",
+   "city": "Vice City",
+   "category": "civic",
+   "flags": [],
+   "real": {
+    "name": "Miami Police Department",
+    "address": "2200 W Flagler St, Miami, FL 33135",
+    "lat": 25.772314,
+    "lng": -80.231648
+   }
+  },
+  {
+   "id": "L2973",
+   "name": "Royals",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "other",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "1000 Lincoln Rd, Miami Beach, FL 33139",
+    "lat": 25.790169,
+    "lng": -80.139055
+   }
+  },
+  {
+   "id": "L18",
+   "name": "Sachem",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "Decoplage",
+    "address": "100 Lincoln Rd, Miami Beach, FL 33139",
+    "lat": 25.790277,
+    "lng": -80.128465
+   }
+  },
+  {
+   "id": "L187",
+   "name": "Sahara Arena",
+   "district": "Shoreline",
+   "city": "Vice City",
+   "category": "leisure",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Kaseya Center",
+    "address": "601 Biscayne Blvd, Miami, FL 33132",
+    "lat": 25.781401,
+    "lng": -80.186969
+   }
+  },
+  {
+   "id": "L232",
+   "name": "Sahara HQ",
+   "district": "Tequesta",
+   "city": "Vice City",
+   "category": "work",
+   "flags": [],
+   "real": {
+    "name": "Brickell Arch",
+    "address": "1395 Brickell Ave, Miami, FL 33131",
+    "lat": 25.760732,
+    "lng": -80.191821
+   }
+  },
+  {
+   "id": "L1139",
+   "name": "Sandeep Plaza",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "leisure",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "1651 Washington Ave, Miami Beach, FL 33139",
+    "lat": 25.790861,
+    "lng": -80.13172
+   }
+  },
+  {
+   "id": "L315",
+   "name": "Schlott Construction",
+   "district": "Port Gellhorn",
+   "city": "",
+   "category": "shop",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "18635 SW 105th Ave, Miami, FL 33157",
+    "lat": 25.595498,
+    "lng": -80.362101
+   }
+  },
+  {
+   "id": "L50",
+   "name": "Seahorse",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "Gabriel South Beach",
+    "address": "640 Ocean Dr, Miami Beach, FL 33139",
+    "lat": 25.776361,
+    "lng": -80.131642
+   }
+  },
+  {
+   "id": "L45",
+   "name": "Seashell Hotel",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "Starlite Hotel",
+    "address": "750 Ocean Dr, Miami Beach, FL 33139",
+    "lat": 25.777686,
+    "lng": -80.131374
+   }
+  },
+  {
+   "id": "L2433",
+   "name": "Service Gate",
+   "district": "Vice City International Airport",
+   "city": "",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "South East Gate",
+    "address": "Doral, FL 33126",
+    "lat": 25.788741,
+    "lng": -80.272037
+   }
+  },
+  {
+   "id": "L39",
+   "name": "Seven Seas Seafood",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "Edison Hotel",
+    "address": "960 Ocean Dr, Miami Beach, FL 33139",
+    "lat": 25.780257,
+    "lng": -80.130898
+   }
+  },
+  {
+   "id": "L224",
+   "name": "ShoreFront",
+   "district": "Downtown",
+   "city": "Vice City",
+   "category": "work",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Citigroup Center",
+    "address": "201 S Biscayne Blvd, Miami, FL 33131",
+    "lat": 25.772025,
+    "lng": -80.186896
+   }
+  },
+  {
+   "id": "L671",
+   "name": "Shoreline Market",
+   "district": "Vice City",
+   "city": "",
+   "category": "shop",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Bayside Marketplace",
+    "address": "401 Biscayne Blvd, Miami, FL 33132",
+    "lat": 25.778402,
+    "lng": -80.186794
+   }
+  },
+  {
+   "id": "L419",
+   "name": "Simon's Tires",
+   "district": "La Perle",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [],
+   "real": {
+    "name": "George's Tires and Repair",
+    "address": "501 NW 54th St, Miami, FL 33127",
+    "lat": 25.825274,
+    "lng": -80.204043
+   }
+  },
+  {
+   "id": "L1622",
+   "name": "Spender's",
+   "district": "Southside",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "20507 S Dixie Hwy, Cutler Bay, FL 33189",
+    "lat": 25.573534,
+    "lng": -80.368736
+   }
+  },
+  {
+   "id": "L1339",
+   "name": "Star Island Bridge",
+   "district": "Vice-Dale County",
+   "city": "",
+   "category": "transport",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "QRFX+9F8 Miami Beach, Florida",
+    "lat": 25.773412,
+    "lng": -80.151297
+   }
+  },
+  {
+   "id": "L702",
+   "name": "Status Auto Resort",
+   "district": "Crosstown",
+   "city": "Vice City",
+   "category": "hotel",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "2060 Biscayne Blvd, Miami, FL 33137",
+    "lat": 25.796638,
+    "lng": -80.19026
+   }
+  },
+  {
+   "id": "L255",
+   "name": "Stiltsville Bridge",
+   "district": "Mariana County",
+   "city": "",
+   "category": "transport",
+   "flags": [
+    "unconfirmed"
+   ],
+   "real": {
+    "name": "William M Powell Bridge",
+    "address": "Miami, FL 33149",
+    "lat": 25.746374,
+    "lng": -80.185963
+   }
+  },
+  {
+   "id": "L1488",
+   "name": "Stock 305",
+   "district": "Stockyard",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "295 NW 26th St, Miami, FL 33127",
+    "lat": 25.801646,
+    "lng": -80.200888
+   }
+  },
+  {
+   "id": "L1590",
+   "name": "Strip Mall",
+   "district": "Southside",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "10200 SW 183rd St, Miami, FL 33157",
+    "lat": 25.599069,
+    "lng": -80.356959
+   }
+  },
+  {
+   "id": "L734",
+   "name": "Submerged Tank",
+   "district": "Vice-Dale County",
+   "city": "",
+   "category": "leisure",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "RW65+FMG Miami Beach, Florida",
+    "lat": 25.811187,
+    "lng": -80.090797
+   }
+  },
+  {
+   "id": "L747",
+   "name": "Temple Park",
+   "district": "Tequesta",
+   "city": "Vice City",
+   "category": "leisure",
+   "flags": [],
+   "real": {
+    "name": "Latitude on the River",
+    "address": "185 SW 7th St, Miami, FL 33130",
+    "lat": 25.767558,
+    "lng": -80.196953
+   }
+  },
+  {
+   "id": "L3402",
+   "name": "Tennis Courts",
+   "district": "Port Vice City",
+   "city": "",
+   "category": "leisure",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "QRHF+5FH Miami, Florida",
+    "lat": 25.777938,
+    "lng": -80.176266
+   }
+  },
+  {
+   "id": "L127",
+   "name": "Tennis Stadium",
+   "district": "Catalan Key",
+   "city": "",
+   "category": "leisure",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Crandon Park Tennis Center",
+    "address": "7300 Crandon Blvd, Key Biscayne, FL 33149",
+    "lat": 25.708325,
+    "lng": -80.159149
+   }
+  },
+  {
+   "id": "L540",
+   "name": "Tequesta Retreat Bridge",
+   "district": "Tequesta Retreat",
+   "city": "Vice City",
+   "category": "transport",
+   "flags": [],
+   "real": {
+    "name": "Brickell Key Bridge",
+    "address": "Brickell Key Dr, Miami, FL 33131",
+    "lat": 25.765535,
+    "lng": -80.187167
+   }
+  },
+  {
+   "id": "L630",
+   "name": "Tequesta Retreat Park",
+   "district": "Tequesta Retreat",
+   "city": "Vice City",
+   "category": "civic",
+   "flags": [],
+   "real": {
+    "name": "Brickell Key Park",
+    "address": "Brickell Key Dr, Miami, FL 33131",
+    "lat": 25.764759,
+    "lng": -80.184451
+   }
+  },
+  {
+   "id": "L644",
+   "name": "The Amalfi",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "food",
+   "flags": [],
+   "real": {
+    "name": "Byblos Mediterranean Restaurant Miami",
+    "address": "1545 Collins Ave, Miami Beach, FL 33139",
+    "lat": 25.788285,
+    "lng": -80.130056
+   }
+  },
+  {
+   "id": "L2035",
+   "name": "The Anderson",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "401 Jefferson Ave, Miami Beach, FL 33139",
+    "lat": 25.773794,
+    "lng": -80.136987
+   }
+  },
+  {
+   "id": "L20",
+   "name": "The Atoll",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "Loews Miami Beach",
+    "address": "1601 Collins Ave, Miami Beach, FL 33139",
+    "lat": 25.789436,
+    "lng": -80.129732
+   }
+  },
+  {
+   "id": "L2376",
+   "name": "The Flamingrill",
+   "district": "Crosstown",
+   "city": "Vice City",
+   "category": "food",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "2156 NW 7th Ave, Miami, FL 33127",
+    "lat": 25.797202,
+    "lng": -80.207358
+   }
+  },
+  {
+   "id": "L1709",
+   "name": "The Hub Gallery",
+   "district": "Stockyard",
+   "city": "Vice City",
+   "category": "leisure",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "450 NW 28th St, Miami, FL 33127",
+    "lat": 25.802534,
+    "lng": -80.202511
+   }
+  },
+  {
+   "id": "L185",
+   "name": "The Sumerian",
+   "district": "Bayside",
+   "city": "Vice City",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "Marriott Miami Biscayne Bay",
+    "address": "1633 N Bayshore Dr, Miami, FL 33132",
+    "lat": 25.790844,
+    "lng": -80.186536
+   }
+  },
+  {
+   "id": "L556",
+   "name": "The Vault",
+   "district": "Downtown",
+   "city": "Vice City",
+   "category": "nightlife",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Club Space",
+    "address": "34 NE 11th St, Miami, FL 33132",
+    "lat": 25.784655,
+    "lng": -80.193183
+   }
+  },
+  {
+   "id": "L2624",
+   "name": "Third Eye",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "1623 Alton Rd, Miami Beach, FL 33139",
+    "lat": 25.789678,
+    "lng": -80.140972
+   }
+  },
+  {
+   "id": "L1006",
+   "name": "Tisha-Wocka Flea Market",
+   "district": "Tisha-Wocka",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [
+    "demolished",
+    "enterable"
+   ],
+   "real": {
+    "name": "Opa-Locka Flea Market",
+    "address": "12705 NW 42nd Ave, Opa-locka, FL 33054",
+    "lat": 25.895061,
+    "lng": -80.266804
+   }
+  },
+  {
+   "id": "L1480",
+   "name": "Tunnel Entrance",
+   "district": "Port Vice City",
+   "city": "",
+   "category": "transport",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "QRGG+4RH Miami, Florida",
+    "lat": 25.775312,
+    "lng": -80.172891
+   }
+  },
+  {
+   "id": "L1063",
+   "name": "Underwater Ruins",
+   "district": "Vice-Dale County",
+   "city": "",
+   "category": "leisure",
+   "flags": [
+    "unconfirmed"
+   ],
+   "real": {
+    "name": "Neptune Memorial Reef",
+    "address": "PW55+XW, Miami, FL",
+    "lat": 25.71,
+    "lng": -80.09015
+   }
+  },
+  {
+   "id": "L440",
+   "name": "V-Rock Café",
+   "district": "Shoreline",
+   "city": "Vice City",
+   "category": "leisure",
+   "flags": [],
+   "real": {
+    "name": "Hard Rock Cafe",
+    "address": "401 Biscayne Blvd, Miami, FL 33132",
+    "lat": 25.777511,
+    "lng": -80.184461
+   }
+  },
+  {
+   "id": "L345",
+   "name": "VCIA Control Tower",
+   "district": "Vice City International Airport",
+   "city": "",
+   "category": "transport",
+   "flags": [],
+   "real": {
+    "name": "FAA Miami ATCT (MIA)",
+    "address": "6400 NW 22nd St, Miami, FL 33122",
+    "lat": 25.79347,
+    "lng": -80.299433
+   }
+  },
+  {
+   "id": "L218",
+   "name": "VCIA Metro Mover Station",
+   "district": "Salton",
+   "city": "Vice City",
+   "category": "transport",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Miami International Airport Station",
+    "address": "3861 NW 21st St, Miami, FL 33142",
+    "lat": 25.797225,
+    "lng": -80.258579
+   }
+  },
+  {
+   "id": "L1453",
+   "name": "VYB",
+   "district": "Vice Beach",
+   "city": "",
+   "category": "nightlife",
+   "flags": [],
+   "real": {
+    "name": "LIV Nightclub Miami",
+    "address": "4441 Collins Ave, Miami Beach, FL 33140",
+    "lat": 25.81804,
+    "lng": -80.122397
+   }
+  },
+  {
+   "id": "L1610",
+   "name": "Vapid Dealership",
+   "district": "Southside",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [],
+   "real": {
+    "name": "Merecedes-Benz of Cutler Bay",
+    "address": "10701 SW 211 St, Cutler Bay, FL 33189",
+    "lat": 25.573313,
+    "lng": -80.364885
+   }
+  },
+  {
+   "id": "L192",
+   "name": "Venture Apts North",
+   "district": "Rockridge",
+   "city": "Vice City",
+   "category": "home",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Robert King High Towers",
+    "address": "1405 NW 7th St, Miami, FL 33125",
+    "lat": 25.792914,
+    "lng": -80.215268
+   }
+  },
+  {
+   "id": "L193",
+   "name": "Venture Apts South",
+   "district": "Rockridge",
+   "city": "Vice City",
+   "category": "home",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "800 NW 13th Ave, Miami, FL 33125",
+    "lat": 25.781893,
+    "lng": -80.217273
+   }
+  },
+  {
+   "id": "L2731",
+   "name": "Vercetti Estate",
+   "district": "Starfish Island",
+   "city": "",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "21 W Star Island Dr, Miami Beach, FL 33139",
+    "lat": 25.780306,
+    "lng": -80.151768
+   }
+  },
+  {
+   "id": "L2400",
+   "name": "Vetiver Minimarket",
+   "district": "La Perle",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Little Haiti Supermarket",
+    "address": "5600 NE 2nd Ave Unit B, Miami, FL 33137",
+    "lat": 25.827212,
+    "lng": -80.192358
+   }
+  },
+  {
+   "id": "L120",
+   "name": "Vice Beach Marina",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "transport",
+   "flags": [],
+   "real": {
+    "name": "Miami Beach Marina",
+    "address": "300 Alton Rd, Miami Beach, FL 33139",
+    "lat": 25.771624,
+    "lng": -80.13974
+   }
+  },
+  {
+   "id": "L1293",
+   "name": "Vice Beach Police Department",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "civic",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Miami Beach Police Department",
+    "address": "1100 Washington Ave, Miami Beach, FL 33139",
+    "lat": 25.782311,
+    "lng": -80.133222
+   }
+  },
+  {
+   "id": "L101",
+   "name": "Vice Beach Welcome Mural",
+   "district": "Vice Beach",
+   "city": "",
+   "category": "leisure",
+   "flags": [],
+   "real": {
+    "name": "Miami Beach Welcome Mural",
+    "address": "770 Arthur Godfrey Rd, Miami Beach, FL 33140",
+    "lat": 25.813592,
+    "lng": -80.132316
+   }
+  },
+  {
+   "id": "L441",
+   "name": "Vice City Arts Center Metro Station",
+   "district": "Downtown",
+   "city": "Vice City",
+   "category": "transport",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Adrienne Arsht Metromover Station",
+    "address": "Miami, FL 33132",
+    "lat": 25.789452,
+    "lng": -80.187943
+   }
+  },
+  {
+   "id": "L2030",
+   "name": "Vice City Casino",
+   "district": "Vice-Dale County",
+   "city": "",
+   "category": "leisure",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Magic City Casino",
+    "address": "450 NW 37th Ave, Miami, FL 33125",
+    "lat": 25.77678,
+    "lng": -80.256927
+   }
+  },
+  {
+   "id": "L1604",
+   "name": "Vice City Casino Racetrack",
+   "district": "Vice-Dale County",
+   "city": "",
+   "category": "nightlife",
+   "flags": [
+    "unconfirmed"
+   ],
+   "real": {
+    "name": "Magic City Casino Track",
+    "address": "QPGV+P6, Miami, FL 33125",
+    "lat": 25.77678,
+    "lng": -80.256927
+   }
+  },
+  {
+   "id": "L907",
+   "name": "Vice City Hall",
+   "district": "Peacock Bay",
+   "city": "Vice City",
+   "category": "civic",
+   "flags": [],
+   "real": {
+    "name": "Miami City Hall",
+    "address": "3500 Pan American Dr, Miami, FL 33133",
+    "lat": 25.727684,
+    "lng": -80.233765
+   }
+  },
+  {
+   "id": "L2760",
+   "name": "Vice City Hospital",
+   "district": "Rockridge",
+   "city": "Vice City",
+   "category": "civic",
+   "flags": [
+    "unconfirmed"
+   ],
+   "real": {
+    "name": "Jackson Behavioral Health Hospital",
+    "address": "1695 NW 9th Ave, Miami, FL 33136",
+    "lat": 25.790762,
+    "lng": -80.209446
+   }
+  },
+  {
+   "id": "L2027",
+   "name": "Vice City Oceanarium",
+   "district": "Catalan Key",
+   "city": "",
+   "category": "leisure",
+   "flags": [
+    "closed"
+   ],
+   "real": {
+    "name": "The Golden Dome",
+    "address": "Miami Seaquarium, 4400 Rickenbacker Cswy, Key Biscayne, FL 33149",
+    "lat": 25.734324,
+    "lng": -80.16499
+   }
+  },
+  {
+   "id": "L539",
+   "name": "Vice City Pawn",
+   "district": "Crosstown",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "Americash Pawn Shop",
+    "address": "2518 NE 2nd Ave, Miami, FL 33137",
+    "lat": 25.801158,
+    "lng": -80.191279
+   }
+  },
+  {
+   "id": "L1646",
+   "name": "Vice City Shopping Plaza",
+   "district": "Crosstown",
+   "city": "Vice City",
+   "category": "leisure",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "1764 Biscayne Blvd, Miami, FL 33132",
+    "lat": 25.792635,
+    "lng": -80.189352
+   }
+  },
+  {
+   "id": "L85",
+   "name": "Vice Museum of Art",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "civic",
+   "flags": [],
+   "real": {
+    "name": "The Bass",
+    "address": "2100 Collins Ave, Miami Beach, FL 33139",
+    "lat": 25.797567,
+    "lng": -80.13013
+   }
+  },
+  {
+   "id": "L602",
+   "name": "Vice Pass",
+   "district": "Rialto Islands",
+   "city": "",
+   "category": "transport",
+   "flags": [],
+   "real": {
+    "name": "Venetian Toll Plaza",
+    "address": "877-853 Venetian Causeway, Miami Beach, FL 33139",
+    "lat": 25.79001,
+    "lng": -80.178229
+   }
+  },
+  {
+   "id": "L1",
+   "name": "Vice Regal",
+   "district": "Washington Beach",
+   "city": "Vice Beach",
+   "category": "hotel",
+   "flags": [],
+   "real": {
+    "name": "The Ritz-Carlton Bal Harbour",
+    "address": "10295 Collins Ave, Bal Harbour, FL 33154",
+    "lat": 25.898996,
+    "lng": -80.123299
+   }
+  },
+  {
+   "id": "L634",
+   "name": "Vice River",
+   "district": "Vice City",
+   "city": "",
+   "category": "nature",
+   "flags": [],
+   "real": {
+    "name": "Miami River",
+    "address": "Miami, FL",
+    "lat": 25.777507,
+    "lng": -80.211213
+   }
+  },
+  {
+   "id": "L2505",
+   "name": "Vicycle",
+   "district": "Rockridge",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [
+    "demolished"
+   ],
+   "real": {
+    "name": "",
+    "address": "726 W Flagler St, Miami, FL 33130",
+    "lat": 25.773583,
+    "lng": -80.206669
+   }
+  },
+  {
+   "id": "L2758",
+   "name": "Video Forever",
+   "district": "Rockridge",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [
+    "closed"
+   ],
+   "real": {
+    "name": "Ernesto Ferro's Salon Spa",
+    "address": "1763 NW 7th St, Miami, FL 33125",
+    "lat": 25.780221,
+    "lng": -80.223778
+   }
+  },
+  {
+   "id": "L2181",
+   "name": "Void",
+   "district": "Ocean Beach",
+   "city": "Vice Beach",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "546 Lincoln Rd, Miami Beach, FL 33139",
+    "lat": 25.790442,
+    "lng": -80.13418
+   }
+  },
+  {
+   "id": "L1601",
+   "name": "WLC Community Centre",
+   "district": "Southside",
+   "city": "Vice City",
+   "category": "work",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "17201 SW 103rd Ave, Miami, FL 33157",
+    "lat": 25.609488,
+    "lng": -80.358732
+   }
+  },
+  {
+   "id": "L836",
+   "name": "Watson Island Sea Port",
+   "district": "Vice-Dale County",
+   "city": "",
+   "category": "transport",
+   "flags": [
+    "demolished"
+   ],
+   "real": {
+    "name": "Miami Seaplane Base",
+    "address": "1000 MacArthur Cswy, Miami, FL 33132",
+    "lat": 25.783358,
+    "lng": -80.177413
+   }
+  },
+  {
+   "id": "L449",
+   "name": "What's Cooking",
+   "district": "Crosstown",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [],
+   "real": {
+    "name": "",
+    "address": "1300 N Miami Ave, Miami, FL 33136",
+    "lat": 25.787114,
+    "lng": -80.19435
+   }
+  },
+  {
+   "id": "L1043",
+   "name": "Wholesale Furniture Outlet",
+   "district": "Southside",
+   "city": "Vice City",
+   "category": "other",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "",
+    "address": "509 NW 72nd St, Miami, FL 33150",
+    "lat": 25.841061,
+    "lng": -80.205292
+   }
+  },
+  {
+   "id": "L565",
+   "name": "X Hotel",
+   "district": "Vice City",
+   "city": "",
+   "category": "hotel",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "EB Hotel Miami",
+    "address": "4299 NW 36th St, Miami, FL 33166",
+    "lat": 25.80879,
+    "lng": -80.266156
+   }
+  },
+  {
+   "id": "L553",
+   "name": "Xero Gas Station",
+   "district": "Crosstown",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [
+    "unconfirmed"
+   ],
+   "real": {
+    "name": "Caraf Oil Gas Station",
+    "address": "2522 NE 2nd Ave, Miami, FL 33137",
+    "lat": 25.801429,
+    "lng": -80.191277
+   }
+  },
+  {
+   "id": "L608",
+   "name": "Xero Gas Station",
+   "district": "Rockridge",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [],
+   "real": {
+    "name": "Valero Gas Station",
+    "address": "1705 NW 7th St, Miami, FL 33125",
+    "lat": 25.780223,
+    "lng": -80.222955
+   }
+  },
+  {
+   "id": "L16",
+   "name": "Y Vice City",
+   "district": "Washington Beach",
+   "city": "Vice Beach",
+   "category": "hotel",
+   "flags": [
+    "enterable"
+   ],
+   "real": {
+    "name": "W South Beach",
+    "address": "2201 Collins Ave, Miami Beach, FL 33139",
+    "lat": 25.797381,
+    "lng": -80.12719
+   }
+  },
+  {
+   "id": "L2757",
+   "name": "Zeke's Gadgets",
+   "district": "Rockridge",
+   "city": "Vice City",
+   "category": "shop",
+   "flags": [
+    "closed",
+    "enterable"
+   ],
+   "real": {
+    "name": "A Superior Insurance",
+    "address": "1761 NW 7th St, Miami, FL 33125",
+    "lat": 25.780245,
+    "lng": -80.223701
+   }
+  }
+ ],
+ "tours": [
+  {
+   "id": "ocean-drive",
+   "title": {
+    "en": "Ocean Drive Art Deco",
+    "fr": "L'Art déco d'Ocean Drive"
+   },
+   "blurb": {
+    "en": "The pastel hotel strip of Ocean Beach, south to north.",
+    "fr": "Les hôtels pastel d'Ocean Beach, du sud au nord."
+   },
+   "stops": [
+    "L51",
+    "L50",
+    "L49",
+    "L48",
+    "L47",
+    "L45",
+    "L41",
+    "L1015",
+    "L39",
+    "L36",
+    "L35",
+    "L32",
+    "L25"
+   ]
+  },
+  {
+   "id": "bayfront",
+   "title": {
+    "en": "Downtown bayfront",
+    "fr": "Le front de mer de Downtown"
+   },
+   "blurb": {
+    "en": "Arena, opera house, market and the big wheel along Biscayne Bay.",
+    "fr": "Arena, opéra, marché et grande roue le long de la baie de Biscayne."
+   },
+   "stops": [
+    "L224",
+    "L222",
+    "L208",
+    "L687",
+    "L205",
+    "L438",
+    "L440",
+    "L710",
+    "L187",
+    "L486",
+    "L186"
+   ]
+  },
+  {
+   "id": "tequesta",
+   "title": {
+    "en": "Tequesta skyline",
+    "fr": "Les tours de Tequesta"
+   },
+   "blurb": {
+    "en": "Brickell's banks and towers, renamed.",
+    "fr": "Les banques et gratte-ciel de Brickell, rebaptisés."
+   },
+   "stops": [
+    "L241",
+    "L240",
+    "L499",
+    "L2585",
+    "L232",
+    "L501",
+    "L982",
+    "L3217",
+    "L540",
+    "L387",
+    "L630",
+    "L131",
+    "L747",
+    "L130"
+   ]
+  },
+  {
+   "id": "little-cuba",
+   "title": {
+    "en": "Little Cuba",
+    "fr": "Little Cuba"
+   },
+   "blurb": {
+    "en": "Calle Ocho and Little Havana, block by block.",
+    "fr": "Calle Ocho et Little Havana, rue après rue."
+   },
+   "stops": [
+    "L2824",
+    "L3079",
+    "L745",
+    "L212",
+    "L1369",
+    "L2352",
+    "L2301"
+   ]
+  },
+  {
+   "id": "stockyard",
+   "title": {
+    "en": "Stockyard street art",
+    "fr": "Le street art de Stockyard"
+   },
+   "blurb": {
+    "en": "Wynwood's warehouses and murals.",
+    "fr": "Les entrepôts et fresques de Wynwood."
+   },
+   "stops": [
+    "L478",
+    "L175",
+    "L1108",
+    "L1668",
+    "L1488",
+    "L1378",
+    "L1655",
+    "L1482",
+    "L1709",
+    "L1379",
+    "L1656",
+    "L1660",
+    "L1507",
+    "L2265"
+   ]
+  },
+  {
+   "id": "after-dark",
+   "title": {
+    "en": "Vice City after dark",
+    "fr": "Vice City by night"
+   },
+   "blurb": {
+    "en": "Clubs, bars and casinos.",
+    "fr": "Clubs, bars et casinos."
+   },
+   "stops": [
+    "L2030",
+    "L1604",
+    "L190",
+    "L556",
+    "L172",
+    "L104",
+    "L1453"
+   ]
+  }
+ ]
+}
